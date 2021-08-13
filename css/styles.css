@@ -1,0 +1,268 @@
+
+
+
+
+
+/* Header */
+.nav-header ul li a {
+    text-decoration: none;
+    color: #c3a281;
+    font-weight: 500;
+}
+.nav-header{
+    padding-top: 20px;
+}
+/* Slider */
+.contain-fluid-slider{
+    background-color: #000;
+    margin: 0;
+    padding: 0;
+}
+.banner-img{
+    position: relative;
+}
+.banner-img img {
+    width: 100%;
+    opacity: 0.3;
+}
+.banner-title{
+    position: absolute;
+    top: 30%;
+    left:50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+.banner-button{
+    position: absolute;
+    bottom: 35%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content:space-evenly;
+    width: 30%;
+}
+.banner-title p:first-child{
+    color: #fff;
+    font-size: 47px;
+    font-style: italic;
+}
+.banner-title p:nth-child(2){
+    color: #fff;
+    font-size: 75px;
+}
+.banner-title p:last-child{
+    font-size:26px;
+    color: #fff;
+}
+.banner-button a{
+    background-color: #c3a281;
+    color: #000;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+
+/* Story */
+.restaurant-story{
+    background: url(../img/homepage/rice-banner.png) no-repeat top -270px right -160px, url(../img/homepage/rice2-banner.png) no-repeat right -130px bottom;
+    overflow: hidden;
+    position: relative;
+    padding: 100px 0;
+}
+.contain-fluid-story{
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    display: flex;
+}
+.story-img{
+    width: 50%;
+}
+.story-img img{
+    width: 100%;
+}
+.contain-fluid-story h2{
+    color: #c3a281;
+    font-size: 35px;
+    display: flex;
+}
+.contain-fluid-story h2 hr{
+    width: 30%;
+    text-align: left;
+    margin-left: 0;
+    bottom: 0;
+    margin-top: 32px;
+    height: 2px;
+    opacity: 1;
+}
+.story-content{
+    padding-left: 100px;
+    width: 50%;
+}
+.story-content p{
+    padding: 30px 0;
+    text-align: justify;
+    width: 50%;
+}
+.story-content a{
+    background-color: #c3a281;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px
+}
+/* Product */
+.restaurant-product .container-fluid{
+    background-color: #000;
+    margin: 0;
+    padding: 0;
+}
+.container-image{
+    background-image: url(../img/homepage/bg-shop.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px 0;
+}
+.list-img-product img:nth-child(n+3){
+    padding-top: 30px;
+}
+.list-img-product img{
+    width: 303px;
+}
+.nav-item{
+    padding: 0 80px;
+}
+.nav-item a{
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+}
+.nav-item a:hover{
+    color: #c3a281;
+    border-bottom: 1px solid;
+}
+.img-product-des{
+    text-align:center;
+    z-index:99;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%);
+}
+.button-add{
+    background-color: #c3a281;
+    color: #fff;
+    font-size: 100px;
+    padding: 30px 60px;
+    text-decoration: none;
+    margin: 0 0 30px 0;
+    font-weight: 100;
+}
+.text-title{
+    color: #fff;
+    font-size: 25px;
+    padding: 30px 0 0 0;
+}
+.button-read{
+    background-color: #fff;
+    color: #c3a281;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 25px;
+}
+/* Service */
+.restaurant-service{
+    overflow: hidden;
+}
+.title h2{
+    color: #c3a281;
+}
+.title h2 hr{
+    width:20%;
+    text-align:center;
+    margin-left:40%;
+    height: 2px;
+    opacity: 1;
+    color: #c3a281;
+}
+.rice_banner .img2{
+    position: absolute;
+    z-index: 0;
+    left: -100px;
+    top: 0;
+}
+.rice_banner .img1{
+    position: absolute;
+    z-index: 0;
+    left: -100px;
+    bottom: -200px;
+}
+.service-item{
+    background-color: #c3a281;
+    width:303px;
+    text-align: center;
+    padding-top: 40px;
+    height: 303px;
+}
+.service-item:nth-child(3){
+    padding-top:15px;
+    margin-top: 10px;
+}
+.service-image:nth-child(4){
+    margin-top: 10px;
+}
+.item-text{
+    padding-top: 10px;
+    color: #fff;
+}
+.service-image{
+    width: 303px;
+}
+.service-image img{
+    width: 100%;
+}
+.service-item a{
+    background-color: #fff;
+    color: #c3a281;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+.bt-add-img{
+    background-color: #fff;
+    color: #c3a281;
+    padding: 10px 25px;
+    opacity: 0.8;
+    font-size: 40px;
+    text-decoration: none;
+}
+.img-service-des{
+    background-color: #000;
+    width: 100%;
+    height: 50%;
+    opacity: 0.7;
+}
+.ser-des-text{
+    color: #fff;
+    bottom: 8%;
+    text-align: center;
+    padding: 0 50px;
+}
+.ser-des-text a{
+    background-color: #c3a281;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+.ser-des-text p{
+    padding-bottom: 20px;
+}
+.ser-des-text h3 hr{
+    width:70%;
+    text-align:center;
+    margin-left:80px;
+    height: 2px;
+    opacity: 1;
+    color: #c3a281;
+}
