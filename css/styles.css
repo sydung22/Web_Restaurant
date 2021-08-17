@@ -1,13 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Pacifico&display=swap');
+body{
+    font-family: 'Lato', sans-serif;
+}
 
-
-
-
+/* Carousel */
+.carousel-indicators [data-bs-target]{
+    width: 70px;
+    height: 4px;
+    opacity: 1;
+    margin: 0 5px;
+}
+.carousel-indicators .active{
+    background-color: #c3a281;
+}
+.carousel-indicators{
+    bottom:30px;
+}
 
 /* Header */
 .nav-header ul li a {
     text-decoration: none;
     color: #c3a281;
     font-weight: 500;
+    transition: 0.5s;
+}
+.nav-header ul li::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    background-color: #c3a281;
+    color: #c3a281;
+    transform: scale(0);
+    transition: 0.5s linear;
+}
+.nav-header ul li{
+    border-bottom: 2px solid transparent;
+    position: relative;
 }
 .nav-header{
     padding-top: 20px;
@@ -18,12 +49,21 @@
     margin: 0;
     padding: 0;
 }
+.number-banner-slider{
+    color: #fff;
+    font-size:22px;
+    position: absolute;
+    bottom: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+}
 .banner-img{
     position: relative;
 }
 .banner-img img {
     width: 100%;
     opacity: 0.3;
+    object-fit: cover;
 }
 .banner-title{
     position: absolute;
@@ -34,7 +74,7 @@
 }
 .banner-button{
     position: absolute;
-    bottom: 35%;
+    bottom: 40%;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
@@ -44,11 +84,14 @@
 .banner-title p:first-child{
     color: #fff;
     font-size: 47px;
-    font-style: italic;
+    font-family: 'Pacifico', cursive;
+    margin: 0;
+    line-height: 1;
 }
 .banner-title p:nth-child(2){
     color: #fff;
     font-size: 75px;
+    margin: 0;
 }
 .banner-title p:last-child{
     font-size:26px;
@@ -59,12 +102,10 @@
     color: #000;
     text-decoration: none;
     font-size: 18px;
-    padding: 10px 20px;
+    padding: 10px 40px;
     text-transform: uppercase;
-    font-weight: 500;
+    font-weight: bold;
 }
-
-
 /* Story */
 .restaurant-story{
     background: url(../img/homepage/rice-banner.png) no-repeat top -270px right -160px, url(../img/homepage/rice2-banner.png) no-repeat right -130px bottom;
@@ -114,35 +155,48 @@
     padding: 10px 20px
 }
 /* Product */
-.restaurant-product .container-fluid{
-    background-color: #000;
-    margin: 0;
-    padding: 0;
-}
-.container-image{
+.restaurant-product .contain-fluid-image{
     background-image: url(../img/homepage/bg-shop.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 50px 0;
+    padding:0;
+    margin: 0;
 }
-.list-img-product img:nth-child(n+3){
-    padding-top: 30px;
+.background-drop-product{
+    backdrop-filter: contrast(1.2) brightness(0.2) sepia(0.3) saturate(1.5) hue-rotate(-20deg); 
+    padding: 60px 0 0 0;
+}
+.list-img-product{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
 }
 .list-img-product img{
-    width: 303px;
+    width: calc((100% - 20px )/2);
+  }
+  .img-product-plus img{
+    width: 100%;
+    height:100%;
+  }
+.list-img-product img:nth-child(n+3){
+    margin-top: 15px;
+}
+.list-img-product img:nth-child(2n){
+    margin-left: 15px;
 }
 .nav-item{
-    padding: 0 80px;
+    padding: 0 50px;
 }
 .nav-item a{
     text-decoration: none;
-    color: #000;
     font-size: 20px;
-}
-.nav-item a:hover{
-    color: #c3a281;
-    border-bottom: 1px solid;
+    padding: 0 20px 5px;
+    text-transform: uppercase;
+    color: #696667;
+    font-family: Myriad Pro;
+    letter-spacing: 1.5px;
+    font-weight: 400;
 }
 .img-product-des{
     text-align:center;
@@ -150,31 +204,45 @@
     top: 35%;
     left: 50%;
     transform: translate(-50%);
+    width: 100%;
 }
 .button-add{
     background-color: #c3a281;
     color: #fff;
-    font-size: 100px;
-    padding: 30px 60px;
+    font-size: 70px;
+    padding: 15px 40px;
     text-decoration: none;
     margin: 0 0 30px 0;
     font-weight: 100;
 }
 .text-title{
     color: #fff;
-    font-size: 25px;
-    padding: 30px 0 0 0;
+    font-size: 22px;
+    padding: 20px 0 0 0;
+    text-transform: uppercase;
 }
 .button-read{
     background-color: #fff;
     color: #c3a281;
     text-decoration: none;
     padding: 10px 20px;
-    font-size: 25px;
+    font-size: 22px;
+}
+.nav-item .active{
+    border-bottom: 2px solid #c3a281;
+    background: none;
+    color: #c3a281;
+}
+.number-slider{
+    text-align:center;
+    color: #fff;
+    font-size: 24px;
+    padding: 30px 0 30px 0;
 }
 /* Service */
 .restaurant-service{
     overflow: hidden;
+    padding: 100px 0;
 }
 .title h2{
     color: #c3a281;
@@ -182,52 +250,74 @@
 .title h2 hr{
     width:20%;
     text-align:center;
-    margin-left:40%;
     height: 2px;
     opacity: 1;
+    margin: 10px 0 10px 40%;
     color: #c3a281;
 }
-.rice_banner .img2{
+.rice_banner .img2 {
     position: absolute;
-    z-index: 0;
-    left: -100px;
-    top: 0;
+    z-index: -100;
+    left: -116px;
+    top: -246px;
 }
 .rice_banner .img1{
     position: absolute;
-    z-index: 0;
+    z-index: -100;
     left: -100px;
     bottom: -200px;
 }
+.list-img-service{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding:0 15px 0 0;
+}
 .service-item{
+    width: calc((100% - 10px) / 2);
+}
+.service-item .image-service-first{
+    width: 100%;
+}
+.service-item:nth-child(3) .image-service-second{
+    width: 60px;
+}
+.service-item:nth-child(2),
+.service-item:nth-child(3){
     background-color: #c3a281;
-    width:303px;
     text-align: center;
-    padding-top: 40px;
-    height: 303px;
+    padding: 20px 5px 0;
+}
+.service-item:nth-child(2){
+    padding: 45px 5px 0;
 }
 .service-item:nth-child(3){
-    padding-top:15px;
-    margin-top: 10px;
+    padding: 25px 5px 0;
 }
-.service-image:nth-child(4){
+.service-item:nth-child(n+3){
     margin-top: 10px;
 }
 .item-text{
     padding-top: 10px;
     color: #fff;
 }
-.service-image{
-    width: 303px;
+.item-text p:first-child{
+    font-size: 18px;
+    text-transform: uppercase;
+    margin:0;
 }
-.service-image img{
+/* .service-item img{
     width: 100%;
-}
+} */
 .service-item a{
     background-color: #fff;
     color: #c3a281;
-    padding: 10px 20px;
+    padding: 10px 30px;
     text-decoration: none;
+}
+.service-item:last-child a{
+    padding: 0 20px;
+
 }
 .bt-add-img{
     background-color: #fff;
@@ -256,7 +346,12 @@
     text-decoration: none;
 }
 .ser-des-text p{
-    padding-bottom: 20px;
+    padding-bottom: 10px;
+}
+.ser-des-text h3{
+    font-size: 20px;
+    text-transform: uppercase;
+    line-height: 10px;
 }
 .ser-des-text h3 hr{
     width:70%;
@@ -265,4 +360,364 @@
     height: 2px;
     opacity: 1;
     color: #c3a281;
+}
+/* About */
+/* .contain-fluid-about{
+    background-image: url(../img/homepage/aboutus_bg.png);
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size:cover;
+}
+.background-drop-about{
+    backdrop-filter: contrast(1.2) brightness(0.2) sepia(0.3) saturate(1.5) hue-rotate(-20deg); 
+    padding: 60px 0;
+}
+.chef-info{
+    background-color: #c3a281;
+    color: #fff;
+    width: 100%;
+    padding: 30px 0;
+}
+.info-plus i{
+    font-size: 15px;
+    border: 1px solid white;
+    padding: 17px 20px;
+    margin-left: 15px;
+}
+.info-text{
+    text-align:center;
+}
+.info-text p:first-child{
+    font-size: 24px;
+    text-transform: uppercase;
+}
+.info-text p{
+    margin: 0;
+    line-height: 1.4;
+}
+.slider-about{
+    padding-bottom: 30px;
+    overflow: hidden;
+    width: 50%;
+    padding-left: 30px;
+}
+.content-chef{
+    padding-left: 100px;
+}
+.content-video{
+    padding-left: 15px;
+    width: 100%;
+}
+.video-title{
+    width: 60%;
+}
+.video-title p:first-child{
+    font-size: 35px;
+    color: #c3a281;
+    font-weight: bold;
+}
+.video-title  hr{
+    text-align:center;
+    height: 2px;
+    opacity: 1;
+    color: #c3a281;
+}
+.video-title p{
+    color: #fff;
+} */
+
+/* Contact */
+.restaurant-contact{
+    background-image: url(../img/homepage/rice3-banner.png);
+    background-repeat: no-repeat;
+    background-position: left -150px bottom -115px;
+    background-color:#f0f0f0;
+    padding: 70px;
+}
+.contain-fluid-contact .container{
+    position: relative;
+}
+.contact-title{
+    padding-left: 20px;
+}
+.contact-title p{
+    color: #000;
+    line-height:1.4;
+}
+.contact-title p:first-child{
+    font-size: 35px;
+    color: #c3a281;
+    font-weight: bold;
+    line-height:1;
+}
+.contact-title hr{
+    width: 62%;
+    text-align:center;
+    height: 2px;
+    opacity: 1;
+    color: #c3a281;
+}
+.contact-map{
+    position: relative;
+}
+.contact-map img{
+    width: 100%;
+}
+.item-map{
+    position:absolute;
+    background-color: #c3a281;
+    border-radius:50%;
+}
+.item-map:first-child{
+    width: 20px;
+    height: 20px;
+    top: 10%;
+    left: 70%;
+}
+.item-map:nth-child(2){
+    width: 70px;
+    height: 70px;
+    top: 35%;
+    left: 75%;
+    text-align: center;
+    line-height: 65px;
+    font-size: 30px;
+    color: #fff;
+    font-weight: bold;
+}
+.item-map:nth-child(3){
+    width: 30px;
+    height: 30px;
+    bottom: 10%;
+    left: 60%;
+}
+.contact-form{
+    width: 60%;
+    padding: 0;
+    transform: translateY(-50%);
+    top: 50%;
+    position:absolute
+}
+.contact-form form{
+    padding: 50px 60px;
+    background: #c3a281;
+}
+.contact-form form textarea,
+.contact-form form input{
+    margin-bottom: 15px;
+    padding: 10px 25px;
+    background: #c3a281;
+    border: 2px solid white;
+    color: white;
+}
+.contact-form form textarea:focus,
+.contact-form form input:focus{
+    box-shadow: none;
+    background: #c3a281;
+    border: 2px solid white;
+    color: #fff;
+}
+.contact-form form textarea::placeholder,
+.contact-form form input::placeholder{
+    color: #fff;
+}
+.contact-form .button-send{
+    background: #f0f0f0;
+    padding: 10px 20px 10px 30px;
+    color: #000;
+    text-decoration: none;
+    width: 120px;
+    text-align: center;
+}
+/* Footer */
+.restaurant-footer{
+    background-image: url(../img/homepage/footer.png);
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size:cover;
+    color: #e9e9e9;
+}
+.restaurant-footer .content {
+    padding: 40px 40px 0;
+    padding-bottom: 20px;
+    border-bottom: 1.5px solid #c3a281;
+    font-size: 15px;
+    font-weight: 100;
+}
+.background-drop-footer{
+    backdrop-filter: contrast(1.2) brightness(0.2) sepia(0.3) saturate(1.5) hue-rotate(-20deg); 
+    padding: 20px 0;
+}
+.restaurant-footer .content .social{
+    margin: 0 auto;
+}
+.restaurant-footer .copyright{
+    padding: 10px 0 40px 40px;
+}
+.restaurant-footer .content .social .contact_icon i {
+    margin: 0 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid white;
+    border-radius: 100%;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+/*  */
+.restaurant-product .tab-content>.tab-pane {
+    display: block;
+    height: 0;
+}
+.restaurant-product .tab-content>.active {
+    display: block;
+    height: auto;
+}
+/* Carousel About */
+#carouselProduct .carousel-indicators{
+    bottom: -55px;
+}
+#carouselProduct .carousel-indicators [data-bs-target]{
+    background-color: #a39e9f;
+}
+#carouselProduct .carousel-indicators .active{
+    background-color: #c3a281;
+}
+.carousel-control-next, .carousel-control-prev{
+    width: auto;
+    background-color:#c3a281;
+    opacity: 1;
+    padding: 0 10px;
+    height:150px;
+    top: 50%;
+    transform: translateY(-60%);
+}
+/* About Us */
+main .about_us {
+    z-index: 100;
+    position: relative;
+  }
+  main .about_us .backdrop_bg {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  main .about_us .backdrop_bg .content {
+    -webkit-backdrop-filter: contrast(1.2) brightness(0.4) sepia(0.3) saturate(1.5) hue-rotate(-20deg);
+            backdrop-filter: contrast(1.2) brightness(0.4) sepia(0.3) saturate(1.5) hue-rotate(-20deg);
+    padding-top: 50px;
+  }
+  main .about_us .backdrop_bg .content .slide_aboutus {
+    padding-bottom: 20px;
+    overflow: hidden;
+    width: 49%;
+  }
+  main .about_us .backdrop_bg .content .slide_aboutus .back {
+    position: absolute;
+    z-index: 101;
+    top: 40%;
+    left: 0;
+    color: white !important;
+    background: #c3a281;
+    font-size: 40px;
+    padding: 50px 20px 50px 15px;
+    cursor: pointer;
+  }
+  main .about_us .backdrop_bg .content .slide_aboutus .chef{
+      padding-right: 15px;
+  }
+  main .about_us .backdrop_bg .content .slide_aboutus .slick-dots {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content:center;
+    margin-top: 35px;
+    position: unset;
+  }
+  main .about_us .backdrop_bg .content .slide_aboutus .slick-dots li button{
+      display: none;
+  }
+  main .about_us .backdrop_bg .content .slide_aboutus .slick-dots li {
+    width: 70px;
+    height: 3px;
+    margin: 0 10px;
+    background: #665444;
+    cursor: pointer;
+  }
+  main .about_us .backdrop_bg .content .slide_aboutus .slick-dots .slick-active {
+    background: #c3a281;
+  }
+  main .about_us .backdrop_bg .content .slide_aboutus .chef:focus {
+    outline: none;
+  }
+  main .about_us .backdrop_bg .content .slide_aboutus img {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  main .about_us .backdrop_bg .content .slide_aboutus .info {
+    background: #c3a281;
+    width: 100%;
+    padding: 15px 0;
+    text-align: center;
+    color: white;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-item-align: center;
+        align-self: center;
+  }
+  main .about_us .backdrop_bg .content .slide_aboutus .info h4 {
+    font-weight: 300;
+    margin-bottom: 0 !important;
+  }
+  main .about_us .backdrop_bg .content .slide_aboutus .info p {
+    font-weight: 100;
+    margin-bottom: 0 !important;
+  }
+  main .about_us .backdrop_bg .content .slide_aboutus .info i {
+    margin-right: 5px;
+    font-size: 15px;
+    border: 2px solid white;
+    padding: 15px 20px;
+  }
+  main .about_us .backdrop_bg .content .aboutus_content {
+    padding-top: 30px;
+    width: 51%;
+  }
+  main .about_us .backdrop_bg .content .aboutus_content .title {
+    color: #dab38d;
+    font-size: 30px;
+    font-weight: 500;
+    width: 72%;
+    border-bottom: 2px solid #c3a281;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  main .about_us .backdrop_bg .content .aboutus_content img {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 100%;
+  }
+  main .about_us .backdrop_bg .content .aboutus_content p {
+    margin: 0;
+    margin-bottom: 20px;
+    padding: 0;
+    color: white;
+    width: 69%;
+  }
+  main .about_us .backdrop_bg .content .slick-slider{
+      position: unset;
+  }
+  main .about_us .backdrop_bg .content .slide_aboutus .chef-info{
+      margin-right: 10px;
+      padding: 15px 0;
+  }
+  .video-youtube iframe{
+    width: 100%;
+    height: 353px;
 }
