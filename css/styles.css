@@ -577,13 +577,19 @@ body{
     height: auto;
 }
 /* Carousel About */
-#carouselProduct .carousel-indicators{
+#carouselProduct .carousel-indicators,
+#carouselProduct2 .carousel-indicators,
+#carouselProduct3 .carousel-indicators{
     bottom: -55px;
 }
-#carouselProduct .carousel-indicators [data-bs-target]{
+#carouselProduct .carousel-indicators [data-bs-target],
+#carouselProduct2 .carousel-indicators [data-bs-target],
+#carouselProduct3 .carousel-indicators [data-bs-target]{
     background-color: #a39e9f;
 }
-#carouselProduct .carousel-indicators .active{
+#carouselProduct .carousel-indicators .active,
+#carouselProduct2 .carousel-indicators .active,
+#carouselProduct3 .carousel-indicators .active{
     background-color: #c3a281;
 }
 .carousel-control-next, .carousel-control-prev{
