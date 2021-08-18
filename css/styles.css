@@ -661,8 +661,6 @@ main .about_us {
   }
   main .about_us .backdrop_bg .content .slide_aboutus img {
     width: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
   }
   main .about_us .backdrop_bg .content .slide_aboutus .info {
     background: #c3a281;
