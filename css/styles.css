@@ -151,6 +151,7 @@ body{
 }
 .contain-story{
     display: flex;
+    flex-direction: row-reverse;
 }
 .story-content{
     padding-left: 80px;
@@ -278,7 +279,7 @@ body{
     text-align:center;
     height: 2px;
     opacity: 1;
-    margin: 10px auto;
+    margin: 5px auto;
     color: #c3a281;
 }
 .rice_banner .img2 {
