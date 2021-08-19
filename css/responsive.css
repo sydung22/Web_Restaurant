@@ -565,4 +565,7 @@ main .about_us .backdrop_bg .content .aboutus_content{
   .button-add{
     font-size: 50px;
   }
+  .contact-form form{
+    padding: 40px 30px;
+  }
 }
