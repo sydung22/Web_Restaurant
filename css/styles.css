@@ -14,7 +14,7 @@ body{
     background-color: #c3a281;
 }
 .carousel-indicators{
-    bottom:30px;
+    bottom:40px;
 }
 #carouselExampleIndicators{
     position: unset;
@@ -54,22 +54,22 @@ body{
     background-image: url(../img/banner.png);
     background-size: cover;
     background-position: center;
-    min-height: 800px;
+    min-height: 1000px;
     margin: 0;
     padding: 0;
 }
 .contain-fluid-slider{
     backdrop-filter: contrast(1.2) brightness(0.2) sepia(0.3) saturate(1.5) hue-rotate(-20deg); 
-    min-height: 800px;
+    min-height: 1000px;
 }
 .contain-slider{
-    padding-top: 220px;
+    padding-top: 320px;
 }
 .number-banner-slider{
     color: #fff;
     font-size:22px;
     position: absolute;
-    bottom: 70px;
+    bottom: 80px;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -138,6 +138,7 @@ body{
     color: #c3a281;
     font-size: 35px;
     display: flex;
+    font-weight: bold;
 }
 .contain-fluid-story h2 hr{
     width: 250px;
@@ -224,7 +225,11 @@ body{
     width: 100%;
 }
 .img-product-des a{
-    transition: 0.5s
+    transition: 0.5s;
+}
+.img-product-des a:first-child{
+    color: #fff;
+    text-decoration: none;
 }
 .button-add{
     background-color: #c3a281;
@@ -266,13 +271,14 @@ body{
 }
 .title h2{
     color: #c3a281;
+    font-weight: bold;
 }
 .title h2 hr{
-    width:20%;
+    width:200px;
     text-align:center;
     height: 2px;
     opacity: 1;
-    margin: 10px 0 10px 40%;
+    margin: 10px auto;
     color: #c3a281;
 }
 .rice_banner .img2 {
@@ -339,6 +345,7 @@ body{
 .service-item:last-child a{
     padding: 0 20px;
     transition: 0.5s;
+    color: #c3a281;
 }
 .bt-add-img{
     background-color: #fff;
@@ -567,6 +574,11 @@ body{
     font-size: 15px;
     font-weight: 100;
 }
+.footer-nav-col li a,.restaurant-footer .content .social a{
+    text-decoration:none;
+    color:#fff;
+    transition: 0.5s;
+}
 .background-drop-footer{
     backdrop-filter: contrast(1.2) brightness(0.2) sepia(0.3) saturate(1.5) hue-rotate(-20deg); 
     padding: 20px 0;
@@ -579,8 +591,8 @@ body{
 }
 .restaurant-footer .content .social .contact_icon i {
     margin: 0 5px;
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     border: 1px solid white;
     border-radius: 100%;
     -webkit-box-pack: center;
@@ -589,6 +601,7 @@ body{
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    font-size: 18px;
 }
 /*  */
 .restaurant-product .tab-content>.tab-pane {
@@ -626,7 +639,6 @@ body{
 }
 /* About Us */
 main .about_us {
-    z-index: 100;
     position: relative;
   }
   main .about_us .backdrop_bg {
@@ -751,3 +763,73 @@ main .about_us {
     width: 100%;
     height: 353px;
 }
+/* Menu Bar */
+
+.btn-bar{
+    position:absolute;
+    right: 10px;
+    top: 10px;
+    display: none;
+    width: 40px;
+    height: 40px;
+    transition: all .5s ease-in-out;
+    z-index: 2;
+}
+.menu-btn_burger{
+    position: relative;
+    margin-top: 32px;
+    width: 30px;
+    height: 3px;
+    background:#c3a281;
+    border-radius: 5px;
+    transition: all .5s ease-in-out;
+}
+.menu-btn_burger::before,
+.menu-btn_burger::after{
+    position: absolute;
+    content: '';
+    width: 30px;
+    height: 3px;
+    background:#c3a281;
+    border-radius: 5px;
+    transition: all .5s ease-in-out;
+}
+.menu-btn_burger::before{
+    transform:translateY(-10px);
+}
+.menu-btn_burger::after{
+    transform:translateY(10px);
+}
+/* animate btn_burger */
+.btn-bar.open .menu-btn_burger{
+    transform: translateX(-50%);
+    background:transparent;
+}
+.btn-bar.open .menu-btn_burger::before{
+    transform: rotate(45deg) translate(10px, -10px);
+    background:#fff;
+}
+.btn-bar.open .menu-btn_burger::after{
+    transform: rotate(-45deg) translate(10px, 10px);
+    background:#fff;
+}
+
+/* Button scroll Top */
+#btnScrolltoTop{
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #c3a281;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    color: #fff;
+    border:none;
+    outline: none;
+    cursor: pointer;
+    z-index: 999;
+  }
+  #btnScrolltoTop:active{
+    background-color: #665444 ;
+  }

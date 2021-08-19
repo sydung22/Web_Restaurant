@@ -39,11 +39,26 @@
     background-color: #fff;
     color: #c3a281;
   }
+  .footer-nav-col li a:hover{
+    color: #c3a281;
+  }
+  .restaurant-footer .content .social a:hover{
+    opacity: 0.7;
+  }
 }
 @media (max-width:1199px){
   .container{
     padding-left: 0;
     padding-right: 0;
+  }
+  .restaurant-footer .content .container{
+    margin: auto;
+  }
+  .carousel-indicators{
+    bottom: 30px;
+  }
+  .number-banner-slider{
+    bottom: 70px;
   }
 }
 @media (min-width: 1200px) and (max-width: 1400px){
@@ -52,6 +67,13 @@
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
+  .restaurant-slider,.contain-fluid-slider{
+    min-height: unset;
+    height: 800px;
+  }
+  .contain-slider{
+    padding-top: 220px;
+  }
   /* Story */
   .story-content{
     padding-left: 50px;
@@ -135,8 +157,7 @@
 }
 @media (min-width: 768px) and (max-width: 991px){
   /* Slider */
-  .restaurant-slider,
-  .contain-fluid-slider{
+  .restaurant-slider,.contain-fluid-slider{
     min-height: unset;
     height: 600px;
   }
@@ -288,11 +309,15 @@
   .list-img-service{
     padding: 10px 0 0 0;
   }
+  .rice_banner .img2{
+    left: -120px;
+    top: -120px;
+  }
   .contain-fluid-contact .container{
     position: unset;
   }
   .restaurant-contact{
-    padding: 50px 0;
+    padding: 40px 0;
   }
   .contact-form{
     padding-top: 20px;
@@ -303,8 +328,12 @@
   .restaurant-footer .content .social{
     padding-top: 20px;
   }
-  .contact-title p:first-child{
-    margin-bottom: 10px;
+  .contact-title{
+    padding: 0;
+  }
+  .contact-title p{
+    margin: 0;
+    padding-bottom: 10px;
   }
   .contact-title hr{
     margin: 0;
@@ -320,13 +349,14 @@
   .container{
     max-width: 100%;
   }
-  .nav-header{
+  /* .nav-header{
     display: none;
-  }
+  } */
   .logo-header{
     padding-top:10px;
     display:block;
     text-align:center;
+
   }
   .logo-header a{
     display: block;
@@ -344,10 +374,10 @@
 .contain-fluid-slider,
 .restaurant-slider{
   min-height: unset;
-  height: 600px
+  height: 550px
 }
 .contain-slider{
-  padding-top: 200px;
+  padding-top: 160px;
 }
 .carousel-indicators [data-bs-target]{
   width: 50px;
@@ -360,7 +390,7 @@
 }
 /* Story */
 .restaurant-story{
-  padding: 50px 0;
+  padding: 40px 0;
   background: url(../img/homepage/rice-banner.png) no-repeat top -270px right -161px, url(../img/homepage/rice2-banner.png) no-repeat right -290px bottom;
   background-color: #f0f0f0;
 }
@@ -369,15 +399,20 @@
 }
 .contain-fluid-story h2{
   margin: 0;
-  font-size: 30px;
   display: block;
 }
 .contain-fluid-story h2 hr{
-  margin-top: 10px;
+  margin: 10px 0;
 }
 .story-content p{
   padding: 5px 0 10px;
   width: 100%;
+}
+.story-content a{
+  font-size: 18px;
+}
+.story-content p br:first-child{
+  display:none;
 }
 .contain-fluid-story{
   display: block;
@@ -414,7 +449,7 @@
 }
 /* Service */
 .restaurant-service{
-  padding: 70px 0;
+  padding: 70px 0 40px;
 }
 .service-item:nth-child(2){
   padding: 7% 5px 5%;
@@ -451,22 +486,30 @@
 .ser-des-text h3 hr{
   margin: 20px 0 5px 70px;
 }
+.contact-title p:first-child,.title h2,
+.contain-fluid-story h2,main .about_us .backdrop_bg .content .aboutus_content .title{
+  font-size:26px;
+}
 /* About us */
 main .about_us .backdrop_bg .content .slide_aboutus{
   margin-bottom: 0;
+}
+main .about_us .backdrop_bg .content .aboutus_content .title{
+  margin-bottom: 10px;
 }
 main .about_us .backdrop_bg .content .aboutus_content,
 main .about_us .backdrop_bg .content .slide_aboutus{
   width: 100%;
 }
 main .about_us .backdrop_bg .content{
-  padding: 50px 10px;
+  padding: 40px 10px;
 }
 main .about_us .backdrop_bg .content .aboutus_content{
   padding-top: 0;
 }
 main .about_us .backdrop_bg .content .aboutus_content p{
   width: 100%;
+  margin-bottom: 10px;
 }
 main .about_us .backdrop_bg .content .slide_aboutus .chef{
   padding-right: 0;
@@ -478,13 +521,39 @@ main .about_us .backdrop_bg .content .slide_aboutus .info{
 main .about_us .backdrop_bg .content .aboutus_content{
   padding: 0 6px;
 }
+/* Nav Bar */
+.nav-header ul{
+    position: fixed;
+    width: 100%;
+    min-height: 100vh;
+    background: #000;
+    top: 0;
+    left: -110%;
+    text-align: center;
+    display: block;
+    transition: all 0.5s linear;
+    display: block!important;
+  }
+  .nav-header ul li {
+    padding: 25px 0;
+    border-bottom: 2px solid #c3a281;
+  }
+  .nav-header ul li:nth-child(4){
+    display: none;
+  }
+  .btn-bar{
+    display: block;
+  }
+  .nav-header ul.show{
+    left: 0;
+  }
 }
 @media (max-width: 541px){
   .banner-title p:first-child{
-    font-size: 30px;
+    font-size: 35px;
   }
   .banner-title p:nth-child(2){
-    font-size: 35px;
+    font-size: 40px;
     line-height: 1.2;
     padding: 10px 0;
   }
@@ -509,14 +578,14 @@ main .about_us .backdrop_bg .content .aboutus_content{
     top: 25%;
   }
   .button-add{
-    padding: 15px 30px;
+    padding: 5% 12%;
+    font-size: 20vw
   }
-  .text-title,
-  .img-product-des a:nth-child(3){
-    font-size: 18px;
+  .text-title, .img-product-des a:nth-child(3){
+    font-size: 6vw;
   }
   .service-item:nth-child(2){
-    padding: 5% 5px 0;
+    padding: 5.5% 5px 0;
   }
   .service-item:nth-child(3){
     padding: 2% 5px 0;
@@ -553,7 +622,7 @@ main .about_us .backdrop_bg .content .aboutus_content{
     padding: 0;
   }
   .footer-nav-col{
-    padding-bottom: 15px;
+    padding-bottom: 5px;
   }
   .restaurant-footer .copyright{
     padding: 10px 0 40px;
@@ -562,10 +631,17 @@ main .about_us .backdrop_bg .content .aboutus_content{
   .nav-item a{
     padding: 0 15px 5px;
   }
-  .button-add{
-    font-size: 50px;
-  }
   .contact-form form{
     padding: 40px 30px;
+  }
+  .item-map:nth-child(2){
+    line-height: 0;
+    text-align: unset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 11vw;
+    height: 11vw;
+    font-size: 5vw;
   }
 }

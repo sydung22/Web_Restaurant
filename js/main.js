@@ -33,6 +33,30 @@ $('.slide_aboutus').slick({
 });
 
 
+$('.btn-bar').click(function(){
+  $('.nav-header ul').toggleClass('show');
+})
+
+const menuBtn = document.querySelector('.btn-bar');
+let menuOpen = false;
+menuBtn.addEventListener('click', () => {
+
+  if(!menuOpen) {
+    menuBtn.classList.add('open');
+    menuOpen = true;
+  }else{
+    menuBtn.classList.remove('open');
+    menuOpen = false;
+  }
+
+});
+
+const btnScrolltoTop = document.querySelector('#btnScrolltoTop');
+btnScrolltoTop.addEventListener('click', function(){
+  $('html, body').animate({scrollTop: 0}, 'slow');
+});
+
+
 var myCarousel = document.getElementById('carouselExampleIndicators')
 
 myCarousel.addEventListener('slid.bs.carousel', function () {
