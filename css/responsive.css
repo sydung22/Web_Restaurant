@@ -602,7 +602,7 @@ main .about_us .backdrop_bg .content .aboutus_content{
     width: 100%;
   }
   .text-title, .img-product-des a:nth-child(3){
-    font-size: 6vw;
+    font-size: 5vw;
   }
   .service-item:nth-child(2){
     padding: 5.5% 5px 0;
