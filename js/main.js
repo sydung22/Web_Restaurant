@@ -31,5 +31,21 @@ $('.slide_aboutus').slick({
   //     }
   // }]
 });
-  
+
+
+var myCarousel = document.getElementById('carouselExampleIndicators')
+
+myCarousel.addEventListener('slid.bs.carousel', function () {
+    $index = $('#carouselExampleIndicators .carousel-item.active').index() + 1;
+    if($index <= 9){
+      $index = '0' + $index;
+    }
+    $('.number-banner-slider .num-active').text($index);
+})
+
+$indexTotal = $('#carouselExampleIndicators .carousel-item').length;
+if($indexTotal <= 9){
+  $indexTotal = '0' + $indexTotal;
+}
+$('.number-banner-slider .num-total').text($indexTotal);
 });

@@ -21,7 +21,8 @@
   <body>
     <header>
         <section class="restaurant-header position-relative" style="z-index: 2;">
-            <div class="container">
+            <div class="container contain-header">
+              <div class="logo-header"><a href=""><img src="./img/logo.png" alt=""></a></div>
             <nav class="nav-header">
                 <ul class="d-flex justify-content-between list-unstyled" style="align-items: center;">
                     <li><a href="/">HOME</a></li>
@@ -37,69 +38,71 @@
         </section>
     </header>
     <main>
-        <section class="restaurant-slider position-relative" style="margin-top: -100px;">
-            <div class="container-fluid contain-fluid-slider">
-            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-              <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-              </div>
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <div class="banner-img">
-                    <img src="./img/banner.png" alt="">
-                    <div class="banner-title">
-                      <p>Welcome to</p>
-                      <p>AC BREAD WEBSITE</p>
-                      <p>LOREM IPSUM DOLOR SIT AMET NEMO AD ODIO!</p>
-                    </div>
-                    <div class="banner-button">
-                      <a href="/">Read More  +</a>
-                      <a href="/">Buy Now    ></a>
-                    </div>
-                    <div class="number-banner-slider">01/03</div>
+        <section class="restaurant-slider" style="margin-top: -100px;">
+            <div class="container-fluid contain-fluid-slider position-relative">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
                   </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="banner-img">
-                    <img src="./img/banner.png" alt="">
-                    <div class="banner-title">
-                      <p>Welcome to</p>
-                      <p>AC BREAD WEBSITE</p>
-                      <p>LOREM IPSUM DOLOR SIT AMET NEMO AD ODIO!</p>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <div class="container contain-slider">
+                      <div class="banner-img">
+                        <div class="banner-title">
+                          <p>Welcome to</p>
+                          <p>AC BREAD WEBSITE</p>
+                          <p>LOREM IPSUM DOLOR SIT AMET NEMO AD ODIO!</p>
+                          <div class="banner-button">
+                            <a href="/">Read More  +</a>
+                            <a href="/">Buy Now    ></a>
+                          </div>
+                        </div>
+                      </div>
+                      </div>
                     </div>
-                    <div class="banner-button">
-                      <a href="/">Read More  +</a>
-                      <a href="/">Buy Now    ></a>
+                    <div class="carousel-item">
+                      <div class="container contain-slider">
+                        <div class="banner-img">
+                          <div class="banner-title">
+                            <p>Welcome to</p>
+                            <p>AC BREAD WEBSITE</p>
+                            <p>LOREM IPSUM DOLOR SIT AMET NEMO AD ODIO!</p>
+                            <div class="banner-button">
+                              <a href="/">Read More  +</a>
+                              <a href="/">Buy Now    ></a>
+                            </div>
+                          </div>
+                        </div>
+                        </div>
                     </div>
-                    <div class="number-banner-slider">02/03</div>
+                    <div class="carousel-item">
+                      <div class="container contain-slider">
+                        <div class="banner-img">
+                          <div class="banner-title">
+                            <p>Welcome to</p>
+                            <p>AC BREAD WEBSITE</p>
+                            <p>LOREM IPSUM DOLOR SIT AMET NEMO AD ODIO!</p>
+                            <div class="banner-button">
+                              <a href="/">Read More  +</a>
+                              <a href="/">Buy Now    ></a>
+                            </div>
+                          </div>
+                        </div>
+                        </div>
+                    </div>
                   </div>
+                  <div class="number-banner-slider position-absolute"><span class="num-active">01</span>/<span class="num-total">03</span></div>
                 </div>
-                <div class="carousel-item">
-                  <div class="banner-img">
-                    <img src="./img/banner.png" alt="">
-                    <div class="banner-title">
-                      <p>Welcome to</p>
-                      <p>AC BREAD WEBSITE</p>
-                      <p>LOREM IPSUM DOLOR SIT AMET NEMO AD ODIO!</p>
-                    </div>
-                    <div class="banner-button">
-                      <a href="/">Read More  +</a>
-                      <a href="/">Buy Now    ></a>
-                    </div>
-                    <div class="number-banner-slider">03/03</div>
-                  </div>
-                </div>
-              </div>
-            </div>
             </div>
         </section>
         <section class="restaurant-story">
             <div class="container-fluid contain-fluid-story">
-              <div class="story-img">
-                <img src="./img/img1.png" alt="">
-              </div>
+              <div class="container contain-story">
+                <div class="story-img">
+                  <img src="./img/img1.png" alt="">
+                </div>
               <div class="story-content">
                     <h2>OUR STORY<hr></h2>
                     <p>
@@ -111,6 +114,7 @@
                         <a href="">READ MORE   +</a>
                     </div>
                 </div>
+              </div>
         </section>
         <section class="restaurant-product">
                 <nav>
@@ -139,14 +143,8 @@
                             <div class="carousel-inner">
                               <div class="carousel-item active">
                                 <div class="container">
-                                <div class="row d-flex m-0">
-                                  <div class="col-6 list-img-product">
-                                      <img src="./img/homepage/shop_slide1.png" alt="">
-                                      <img src="./img/homepage/shop_slide3.png" alt="">
-                                      <img src="./img/homepage/shop_slide2.png" alt="">
-                                      <img src="./img/homepage/shop_slide4.png" alt="">
-                                  </div>
-                                  <div class="col-6 img-product-plus position-relative pe-0">
+                                <div class="row d-md-flex flex-row-reverse px-3 mx-0 px-md-0 d-block">
+                                  <div class="col-md-6 col-12 img-product-plus position-relative pe-md-0">
                                     <img src="./img/homepage/shop_slide5.png" alt="">
                                     <div class="img-product-des position-absolute">
                                       <a href="/" class="button-add">+</a>
@@ -154,20 +152,20 @@
                                       <a href="/" class="button-read">READ MORE +</a>
                                     </div>
                                   </div>
+                                  <div class="col-md-6 col-12 list-img-product">
+                                      <img src="./img/homepage/shop_slide1.png" alt="">
+                                      <img src="./img/homepage/shop_slide3.png" alt="">
+                                      <img src="./img/homepage/shop_slide2.png" alt="">
+                                      <img src="./img/homepage/shop_slide4.png" alt="">
+                                  </div>
                                   <div class="number-slider">01/03</div>
                                 </div>
                                 </div>
                               </div>
                               <div class="carousel-item">
                                 <div class="container">
-                                  <div class="row d-flex m-0">
-                                    <div class="col-6 list-img-product">
-                                        <img src="./img/homepage/shop_slide1.png" alt="">
-                                        <img src="./img/homepage/shop_slide3.png" alt="">
-                                        <img src="./img/homepage/shop_slide2.png" alt="">
-                                        <img src="./img/homepage/shop_slide4.png" alt="">
-                                    </div>
-                                    <div class="col-6 img-product-plus position-relative pe-0">
+                                  <div class="row d-md-flex flex-row-reverse px-3 mx-0 px-md-0 d-block">
+                                    <div class="col-md-6 col-12 img-product-plus position-relative pe-md-0">
                                       <img src="./img/homepage/shop_slide5.png" alt="">
                                       <div class="img-product-des position-absolute">
                                         <a href="/" class="button-add">+</a>
@@ -175,20 +173,20 @@
                                         <a href="/" class="button-read">READ MORE +</a>
                                       </div>
                                     </div>
-                                    <div class="number-slider">02/03</div>
+                                    <div class="col-md-6 col-12 list-img-product">
+                                        <img src="./img/homepage/shop_slide1.png" alt="">
+                                        <img src="./img/homepage/shop_slide3.png" alt="">
+                                        <img src="./img/homepage/shop_slide2.png" alt="">
+                                        <img src="./img/homepage/shop_slide4.png" alt="">
+                                    </div>
+                                    <div class="number-slider">01/03</div>
                                   </div>
                                   </div>
                               </div>
                               <div class="carousel-item">
                                 <div class="container">
-                                  <div class="row d-flex m-0">
-                                    <div class="col-6 list-img-product">
-                                        <img src="./img/homepage/shop_slide1.png" alt="">
-                                        <img src="./img/homepage/shop_slide3.png" alt="">
-                                        <img src="./img/homepage/shop_slide2.png" alt="">
-                                        <img src="./img/homepage/shop_slide4.png" alt="">
-                                    </div>
-                                    <div class="col-6 img-product-plus position-relative pe-0">
+                                  <div class="row d-md-flex flex-row-reverse px-3 mx-0 px-md-0 d-block">
+                                    <div class="col-md-6 col-12 img-product-plus position-relative pe-md-0">
                                       <img src="./img/homepage/shop_slide5.png" alt="">
                                       <div class="img-product-des position-absolute">
                                         <a href="/" class="button-add">+</a>
@@ -196,7 +194,13 @@
                                         <a href="/" class="button-read">READ MORE +</a>
                                       </div>
                                     </div>
-                                    <div class="number-slider">03/03</div>
+                                    <div class="col-md-6 col-12 list-img-product">
+                                        <img src="./img/homepage/shop_slide1.png" alt="">
+                                        <img src="./img/homepage/shop_slide3.png" alt="">
+                                        <img src="./img/homepage/shop_slide2.png" alt="">
+                                        <img src="./img/homepage/shop_slide4.png" alt="">
+                                    </div>
+                                    <div class="number-slider">01/03</div>
                                   </div>
                                   </div>
                               </div>
@@ -221,20 +225,41 @@
                             <div class="carousel-inner">
                               <div class="carousel-item active">
                                 <div class="container">
-                                  <div class="row d-flex m-0">
-                                    <div class="col-6 list-img-product">
-                                        <img src="./img/homepage/shop_slide1.png" alt="">
-                                        <img src="./img/homepage/shop_slide3.png" alt="">
-                                        <img src="./img/homepage/shop_slide2.png" alt="">
-                                        <img src="./img/homepage/shop_slide4.png" alt="">
+                                <div class="row d-md-flex flex-row-reverse px-3 mx-0 px-md-0 d-block">
+                                  <div class="col-md-6 col-12 img-product-plus position-relative pe-md-0">
+                                    <img src="./img/homepage/shop_slide5.png" alt="">
+                                    <div class="img-product-des position-absolute">
+                                      <a href="/" class="button-add">+</a>
+                                      <p class="text-title">Lorem ipsum dolor</p>
+                                      <a href="/" class="button-read">READ MORE +</a>
                                     </div>
-                                    <div class="col-6 img-product-plus position-relative pe-0">
+                                  </div>
+                                  <div class="col-md-6 col-12 list-img-product">
+                                      <img src="./img/homepage/shop_slide1.png" alt="">
+                                      <img src="./img/homepage/shop_slide3.png" alt="">
+                                      <img src="./img/homepage/shop_slide2.png" alt="">
+                                      <img src="./img/homepage/shop_slide4.png" alt="">
+                                  </div>
+                                  <div class="number-slider">01/03</div>
+                                </div>
+                                </div>
+                              </div>
+                              <div class="carousel-item">
+                                <div class="container">
+                                  <div class="row d-md-flex flex-row-reverse px-3 mx-0 px-md-0 d-block">
+                                    <div class="col-md-6 col-12 img-product-plus position-relative pe-md-0">
                                       <img src="./img/homepage/shop_slide5.png" alt="">
                                       <div class="img-product-des position-absolute">
                                         <a href="/" class="button-add">+</a>
                                         <p class="text-title">Lorem ipsum dolor</p>
                                         <a href="/" class="button-read">READ MORE +</a>
                                       </div>
+                                    </div>
+                                    <div class="col-md-6 col-12 list-img-product">
+                                        <img src="./img/homepage/shop_slide1.png" alt="">
+                                        <img src="./img/homepage/shop_slide3.png" alt="">
+                                        <img src="./img/homepage/shop_slide2.png" alt="">
+                                        <img src="./img/homepage/shop_slide4.png" alt="">
                                     </div>
                                     <div class="number-slider">01/03</div>
                                   </div>
@@ -242,14 +267,8 @@
                               </div>
                               <div class="carousel-item">
                                 <div class="container">
-                                  <div class="row d-flex m-0">
-                                    <div class="col-6 list-img-product">
-                                        <img src="./img/homepage/shop_slide1.png" alt="">
-                                        <img src="./img/homepage/shop_slide3.png" alt="">
-                                        <img src="./img/homepage/shop_slide2.png" alt="">
-                                        <img src="./img/homepage/shop_slide4.png" alt="">
-                                    </div>
-                                    <div class="col-6 img-product-plus position-relative pe-0">
+                                  <div class="row d-md-flex flex-row-reverse px-3 mx-0 px-md-0 d-block">
+                                    <div class="col-md-6 col-12 img-product-plus position-relative pe-md-0">
                                       <img src="./img/homepage/shop_slide5.png" alt="">
                                       <div class="img-product-des position-absolute">
                                         <a href="/" class="button-add">+</a>
@@ -257,28 +276,13 @@
                                         <a href="/" class="button-read">READ MORE +</a>
                                       </div>
                                     </div>
-                                    <div class="number-slider">02/03</div>
-                                  </div>
-                                  </div>
-                              </div>
-                              <div class="carousel-item">
-                                <div class="container">
-                                  <div class="row d-flex m-0">
-                                    <div class="col-6 list-img-product">
+                                    <div class="col-md-6 col-12 list-img-product">
                                         <img src="./img/homepage/shop_slide1.png" alt="">
                                         <img src="./img/homepage/shop_slide3.png" alt="">
                                         <img src="./img/homepage/shop_slide2.png" alt="">
                                         <img src="./img/homepage/shop_slide4.png" alt="">
                                     </div>
-                                    <div class="col-6 img-product-plus position-relative pe-0">
-                                      <img src="./img/homepage/shop_slide5.png" alt="">
-                                      <div class="img-product-des position-absolute">
-                                        <a href="/" class="button-add">+</a>
-                                        <p class="text-title">Lorem ipsum dolor</p>
-                                        <a href="/" class="button-read">READ MORE +</a>
-                                      </div>
-                                    </div>
-                                    <div class="number-slider">03/03</div>
+                                    <div class="number-slider">01/03</div>
                                   </div>
                                   </div>
                               </div>
@@ -303,20 +307,41 @@
                             <div class="carousel-inner">
                               <div class="carousel-item active">
                                 <div class="container">
-                                  <div class="row d-flex m-0">
-                                    <div class="col-6 list-img-product">
-                                        <img src="./img/homepage/shop_slide1.png" alt="">
-                                        <img src="./img/homepage/shop_slide3.png" alt="">
-                                        <img src="./img/homepage/shop_slide2.png" alt="">
-                                        <img src="./img/homepage/shop_slide4.png" alt="">
+                                <div class="row d-md-flex flex-row-reverse px-3 mx-0 px-md-0 d-block">
+                                  <div class="col-md-6 col-12 img-product-plus position-relative pe-md-0">
+                                    <img src="./img/homepage/shop_slide5.png" alt="">
+                                    <div class="img-product-des position-absolute">
+                                      <a href="/" class="button-add">+</a>
+                                      <p class="text-title">Lorem ipsum dolor</p>
+                                      <a href="/" class="button-read">READ MORE +</a>
                                     </div>
-                                    <div class="col-6 img-product-plus position-relative pe-0">
+                                  </div>
+                                  <div class="col-md-6 col-12 list-img-product">
+                                      <img src="./img/homepage/shop_slide1.png" alt="">
+                                      <img src="./img/homepage/shop_slide3.png" alt="">
+                                      <img src="./img/homepage/shop_slide2.png" alt="">
+                                      <img src="./img/homepage/shop_slide4.png" alt="">
+                                  </div>
+                                  <div class="number-slider">01/03</div>
+                                </div>
+                                </div>
+                              </div>
+                              <div class="carousel-item">
+                                <div class="container">
+                                  <div class="row d-md-flex flex-row-reverse px-3 mx-0 px-md-0 d-block">
+                                    <div class="col-md-6 col-12 img-product-plus position-relative pe-md-0">
                                       <img src="./img/homepage/shop_slide5.png" alt="">
                                       <div class="img-product-des position-absolute">
                                         <a href="/" class="button-add">+</a>
                                         <p class="text-title">Lorem ipsum dolor</p>
                                         <a href="/" class="button-read">READ MORE +</a>
                                       </div>
+                                    </div>
+                                    <div class="col-md-6 col-12 list-img-product">
+                                        <img src="./img/homepage/shop_slide1.png" alt="">
+                                        <img src="./img/homepage/shop_slide3.png" alt="">
+                                        <img src="./img/homepage/shop_slide2.png" alt="">
+                                        <img src="./img/homepage/shop_slide4.png" alt="">
                                     </div>
                                     <div class="number-slider">01/03</div>
                                   </div>
@@ -324,14 +349,8 @@
                               </div>
                               <div class="carousel-item">
                                 <div class="container">
-                                  <div class="row d-flex m-0">
-                                    <div class="col-6 list-img-product">
-                                        <img src="./img/homepage/shop_slide1.png" alt="">
-                                        <img src="./img/homepage/shop_slide3.png" alt="">
-                                        <img src="./img/homepage/shop_slide2.png" alt="">
-                                        <img src="./img/homepage/shop_slide4.png" alt="">
-                                    </div>
-                                    <div class="col-6 img-product-plus position-relative pe-0">
+                                  <div class="row d-md-flex flex-row-reverse px-3 mx-0 px-md-0 d-block">
+                                    <div class="col-md-6 col-12 img-product-plus position-relative pe-md-0">
                                       <img src="./img/homepage/shop_slide5.png" alt="">
                                       <div class="img-product-des position-absolute">
                                         <a href="/" class="button-add">+</a>
@@ -339,28 +358,13 @@
                                         <a href="/" class="button-read">READ MORE +</a>
                                       </div>
                                     </div>
-                                    <div class="number-slider">02/03</div>
-                                  </div>
-                                  </div>
-                              </div>
-                              <div class="carousel-item">
-                                <div class="container">
-                                  <div class="row d-flex m-0">
-                                    <div class="col-6 list-img-product">
+                                    <div class="col-md-6 col-12 list-img-product">
                                         <img src="./img/homepage/shop_slide1.png" alt="">
                                         <img src="./img/homepage/shop_slide3.png" alt="">
                                         <img src="./img/homepage/shop_slide2.png" alt="">
                                         <img src="./img/homepage/shop_slide4.png" alt="">
                                     </div>
-                                    <div class="col-6 img-product-plus position-relative pe-0">
-                                      <img src="./img/homepage/shop_slide5.png" alt="">
-                                      <div class="img-product-des position-absolute">
-                                        <a href="/" class="button-add">+</a>
-                                        <p class="text-title">Lorem ipsum dolor</p>
-                                        <a href="/" class="button-read">READ MORE +</a>
-                                      </div>
-                                    </div>
-                                    <div class="number-slider">03/03</div>
+                                    <div class="number-slider">01/03</div>
                                   </div>
                                   </div>
                               </div>
@@ -390,7 +394,19 @@
               <img class="img2" src="./img/homepage/rice3-banner.png" alt="">
           </div>
             <div class="container">
-              <div class="row d-flex m-0">
+              <div class="row d-md-flex flex-row-reverse px-3 mx-0 px-md-0 d-block">
+                <div class="col-lg-6 col-12 position-relative px-0 img-service-content">
+                  <img src="./img/img12.png" alt="" class="w-100 h-100">
+                  <div class="img-service-des position-absolute bottom-0 start-50 translate-middle-x">
+                  </div>
+                  <div class="ser-des-text position-absolute">
+                    <h3>Lorem ipsum dolor<hr></h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                    <a href="/">READ MORE +</a>
+                  </div>
+                </div>
                 <div class="col-lg-6 col-12 list-img-service">
                   <div class="service-item">
                     <img src="./img/img10.png" alt="" class="image-service-first">
@@ -419,18 +435,6 @@
                       <a href="/" class="bt-add-img position-absolute top-50 start-50 translate-middle">+</a>
                     </div>                
                   </div>
-                <div class="col-lg-6 col-12 position-relative px-0 img-service-content">
-                  <img src="./img/img12.png" alt="" class="w-100 h-100">
-                  <div class="img-service-des position-absolute bottom-0 start-50 translate-middle-x">
-                  </div>
-                  <div class="ser-des-text position-absolute">
-                    <h3>Lorem ipsum dolor<hr></h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    </p>
-                    <a href="/">READ MORE +</a>
-                  </div>
-                </div>
               </div>
           </div>
         </div>
@@ -492,39 +496,7 @@
       <section class="about_us">
         <div class="backdrop_bg" style="background-image: url('img/homepage/aboutus_bg.png');">
             <div class="content">
-              <div class="container d-flex">
-                <div class="slide_aboutus">
-                    <div class="chef d-flex flex-column align-items-center">
-                        <img src="img/homepage/chef1.png" alt="">
-                        <div class="info d-flex flex-row justify-content-center">
-                            <div class="chef-info">
-                                <h4>LOREM IPSUM</h4>
-                                <p>Lorem ipsum dolor </p>
-                            </div>
-                            <i class="ionicons ion-plus ml-1"></i>
-                        </div>
-                    </div>
-                    <div class="chef d-flex flex-column align-items-center">
-                        <img src="img/homepage/chef2.png" alt="">
-                        <div class="info d-flex flex-row justify-content-center">
-                            <div class="chef-info">
-                                <h4>LOREM IPSUM</h4>
-                                <p>Lorem ipsum dolor </p>
-                            </div>
-                            <i class="ionicons ion-plus ml-1"></i>
-                        </div>
-                    </div>
-                    <div class="chef d-flex flex-column align-items-center">
-                        <img src="img/homepage/chef3.png" alt="">
-                        <div class="info d-flex flex-row justify-content-center">
-                            <div class="chef-info">
-                                <h4>LOREM IPSUM</h4>
-                                <p>Lorem ipsum dolor </p>
-                            </div>
-                            <i class="ionicons ion-plus ml-1"></i>
-                        </div>
-                    </div>
-                </div>
+              <div class="container d-md-flex flex-row-reverse">
                 <div class="aboutus_content">
                     <div class="title">
                         ABOUT US
@@ -532,17 +504,48 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
                     <div class="video-youtube">
                       <div class="embed-responsive embed-responsive-16by9">
-                        <iframe src="https://www.youtube.com/embed/C8U23AS1irY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
-                      </div>
+                        <iframe src="https://www.youtube.com/embed/ZxZO9wdOHPU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                      </div>
                   </div>
                 </div>
+                <div class="slide_aboutus">
+                  <div class="chef d-flex flex-column align-items-center">
+                      <img src="img/homepage/chef1.png" alt="">
+                      <div class="info d-flex flex-row justify-content-center">
+                          <div class="chef-info">
+                              <h4>LOREM IPSUM</h4>
+                              <p>Lorem ipsum dolor </p>
+                          </div>
+                          <a href="/"><i class="ionicons ion-plus ml-1"></i></a>
+                      </div>
+                  </div>
+                  <div class="chef d-flex flex-column align-items-center">
+                      <img src="img/homepage/chef2.png" alt="">
+                      <div class="info d-flex flex-row justify-content-center">
+                          <div class="chef-info">
+                              <h4>LOREM IPSUM</h4>
+                              <p>Lorem ipsum dolor </p>
+                          </div>
+                          <a href="/"><i class="ionicons ion-plus ml-1"></i></a>
+                      </div>
+                  </div>
+                  <div class="chef d-flex flex-column align-items-center">
+                      <img src="img/homepage/chef3.png" alt="">
+                      <div class="info d-flex flex-row justify-content-center">
+                          <div class="chef-info">
+                              <h4>LOREM IPSUM</h4>
+                              <p>Lorem ipsum dolor </p>
+                          </div>
+                          <i class="ionicons ion-plus ml-1"></i>
+                      </div>
+                  </div>
+              </div>
               </div>
             </div>
         </div>
     </section>
       <section class="restaurant-contact">
         <div class="container-fluid contain-fluid-contact">
-          <div class="container">
+          <div class="container contain-contact">
           <div class="row m-0">
           <div class="col-lg-4 col-md-8 contact-title">
             <p>CONTACT<hr></p>
@@ -572,26 +575,26 @@
         <div class="background-drop-footer">
           <div class="content container d-flex flex-wrap">
             <div class="row">
-              <div class="home col-2 column d-flex flex-column">
+              <div class="home col-4 col-md-2 column d-flex flex-column">
                   <div class="title">Home</div>
                   <div class="title">Our Story</div>
                   <div class="title">About Us</div>
                   <div class="title">Contact</div>
               </div>
-              <div class="menu col-2 column">
+              <div class="menu col-4 col-md-2 column">
                   <div class="title">Menu</div>
                   <div>Lorem</div>
                   <div>Lorem</div>
                   <div>Lorem</div>
               </div>
-              <div class="ourservice col-2 column">
+              <div class="ourservice col-4 col-md-2 column">
                   <div class="title">Our Service</div>
                   <div>Lorem </div>
                   <div>Lorem</div>
                   <div>Lorem</div>
                   <div>Lorem</div>
               </div>
-              <div class="contact col-6 column">
+              <div class="contact col-12 col-md-6 text-center text-md-start column">
                   <div class="title">Contact</div>
                   <div>Company: AC Works Co, Ltd</div>
                   <div>Adress: 17-17 Edo Hori 1 - Chome Nishi - Ku, 

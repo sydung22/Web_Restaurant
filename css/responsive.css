@@ -1,40 +1,68 @@
 @media (min-width: 1200px) {
     .container {
        max-width: 1170px;
-       padding: 0;
+       padding-left: 0;
+       padding-right: 0;
     }
   }
-  @media (min-width: 1023px) {
+@media (min-width: 1023px) {
     
-    .nav-header ul li:hover::before {
-        color: #c3a281;
-        transform: scale(1);  
-      }
-      .nav-header ul li:hover a{
-          color: #FFFF;
-      }
+  .nav-header ul li:hover::before {
+     color: #c3a281;
+     transform: scale(1);  
+  }
+  .nav-header ul li:hover a{
+    color: #FFFF;
+  }
+  .banner-button a:hover{
+    background-color: #fff;
+    color: #c3a281;
+  }
+  .story-content a:hover{
+    background-color: #000;
+  }
+  .img-product-des a:last-child:hover{
+    background-color: #c3a281;
+    color: #fff;
+  }
+  .item-text a:hover,
+  .contact-form .button-send:hover{
+    background-color: #000;
+    color: #fff;
+  }
+  .service-item:last-child a:hover{
+    opacity: 1;
+    color: #c3a281
+  }
+  main .about_us .backdrop_bg .content .slide_aboutus .info a:hover,
+  .ser-des-text a:hover, .img-product-des a:first-child:hover{
+    background-color: #fff;
+    color: #c3a281;
+  }
 }
 @media (max-width:1199px){
   .container{
-    padding: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1400px){
+  .story-content{
+    padding-left: 60px;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-  .banner-title p:nth-child(2){
-    font-size:60px;
-  }
-  .banner-button a{
-    padding: 10px 25px;
-  }
-  .banner-button{
-    bottom: 33%;
-  }
+  /* Story */
   .story-content{
     padding-left: 50px;
   }
-  .story-content p{
-    width: 69%;
+  .contain-fluid-story h2 hr{
+    width: 160px;
   }
+  .story-content p{
+    width: 350px;
+  }
+  /* Service */
   .service-item:nth-child(2){
     padding: 30px 10px 0;
   }
@@ -106,24 +134,40 @@
   }
 }
 @media (min-width: 768px) and (max-width: 991px){
-  .banner-title p:nth-child(2){
-    font-size:45px;
+  /* Slider */
+  .restaurant-slider,
+  .contain-fluid-slider{
+    min-height: unset;
+    height: 600px;
   }
-  .banner-button a{
-    padding: 10px 20px;
-    font-size: 16px;
+  .contain-slider{
+    padding-top: 180px;
   }
   .banner-button{
     bottom: 30%;
   }
-  .banner-title p:last-child{
-    font-size: 20px;
-  }
-  .story-content p{
-    width: 86%;
-  }
+  .banner-title p:first-child{
+    font-size: 40px;
+}
+.banner-title p:nth-child(2){
+    font-size: 62px;
+}
+.banner-title p:nth-child(3){
+    font-size:20px;
+}
+/* Story */
   .story-content{
     padding-left: 40px;
+  }
+  .story-content p{
+    width: 320px;
+    padding: 0 0 10px
+  }
+  .contain-fluid-story h2 hr{
+    width: 150px;
+  }
+  .contain-fluid-story h2{
+    font-size: 30px;
   }
   .button-add{
     font-size: 55px;
@@ -136,7 +180,7 @@
   .button-read{
     font-size:18px;
   }
-
+/* Service */
   .service-item:nth-child(2){
     padding: 30px 10px 0;
   }
@@ -194,14 +238,12 @@
     font-size: 30px;
     padding: 20px 40px;
   }
-  .list-img-service{
-    padding: 0;
-  }
   .ser-des-text{
     bottom: 12%;
     padding: 0 50px;
   }
 
+/* About us */
   main .about_us .backdrop_bg .content .slide_aboutus .info i{
     padding: 5px 10px;
     margin-right: 0px;
@@ -237,6 +279,15 @@
     width: 100%;
     margin-bottom: 10px;
   }
+  /* Carousel */
+  .carousel-control-next, .carousel-control-prev{
+    display: none;
+  }
+}
+@media (max-width: 991px){
+  .list-img-service{
+    padding: 10px 0 0 0;
+  }
   .contain-fluid-contact .container{
     position: unset;
   }
@@ -258,7 +309,173 @@
   .contact-title hr{
     margin: 0;
   }
-  .img-service-content{
-    padding-top: 10px;
+  main .about_us .backdrop_bg .content .slide_aboutus .back{
+    display: none!important;
   }
+  .carousel-control-next, .carousel-control-prev{
+    display: none;
+  }
+}
+@media (max-width: 767px){
+  .container{
+    max-width: 100%;
+  }
+  .nav-header{
+    display: none;
+  }
+  .logo-header{
+    padding-top:10px;
+    display:block;
+    text-align:center;
+  }
+  .logo-header a{
+    display: block;
+  }
+  /* Slider */
+  .banner-title p:first-child{
+    font-size: 34px;
+}
+.banner-title p:nth-child(2){
+    font-size: 52px;
+}
+.banner-title p:nth-child(3){
+    font-size:20px;
+}
+.contain-fluid-slider,
+.restaurant-slider{
+  min-height: unset;
+  height: 600px
+}
+.contain-slider{
+  padding-top: 200px;
+}
+.carousel-indicators [data-bs-target]{
+  width: 50px;
+}
+.number-banner-slider{
+  bottom: 45px;
+}
+.carousel-indicators {
+  bottom: 10px;
+}
+/* Story */
+.restaurant-story{
+  padding: 50px 0;
+  background: url(../img/homepage/rice-banner.png) no-repeat top -270px right -161px, url(../img/homepage/rice2-banner.png) no-repeat right -290px bottom;
+  background-color: #f0f0f0;
+}
+.contain-story{
+  display: block;
+}
+.contain-fluid-story h2{
+  margin: 0;
+  font-size: 30px;
+  display: block;
+}
+.contain-fluid-story h2 hr{
+  margin-top: 10px;
+}
+.story-content p{
+  padding: 5px 0 10px;
+  width: 100%;
+}
+.contain-fluid-story{
+  display: block;
+}
+.story-img{
+  width: 100%;
+  padding: 0 10px;
+}
+.story-content{
+  padding: 15px 10px;
+  width: 100%;
+}
+/* Product */
+.nav-item{
+  padding: 0 20px;
+}
+.background-drop-product{
+  padding: 40px 0 0 0;
+}
+.list-img-product{
+  justify-content: space-between;
+}
+.list-img-product img{
+  width: calc((100% - 10px )/2);
+}
+.list-img-product img:nth-child(2n){
+  margin-left: 10px;
+}
+.img-product-plus{
+  padding: 10px 0;
+}
+.number-slider{
+  padding: 10px 0 20px;
+}
+/* Service */
+.restaurant-service{
+  padding: 70px 0;
+}
+.service-item:nth-child(2){
+  padding: 7% 5px 5%;
+}
+.service-item:nth-child(3){
+  padding: 5% 5px 5%;
+}
+.item-text p:first-child{
+  font-size: 3.5vw;
+}
+.item-text p:nth-child(2){
+  font-size: 2.5vw;
+  margin-bottom: 2vh;
+}
+.service-item:not(:last-child) a{
+  font-size: 2.5vw;
+}
+.service-item:nth-child(2) .image-service-second{
+  width: 15vw;
+}
+.service-item:nth-child(3) .image-service-second{
+  width: 10vw;
+}
+.ser-des-text h3{
+  font-size: 4vw;
+}
+.ser-des-text p,
+.ser-des-text a{
+  font-size: 2.5vw;
+}
+.ser-des-text p{
+  padding-bottom: 0;
+}
+.ser-des-text h3 hr{
+  margin: 20px 0 5px 70px;
+}
+/* About us */
+main .about_us .backdrop_bg .content .slide_aboutus{
+  margin-bottom: 0;
+}
+main .about_us .backdrop_bg .content .aboutus_content,
+main .about_us .backdrop_bg .content .slide_aboutus{
+  width: 100%;
+}
+main .about_us .backdrop_bg .content{
+  padding: 50px 10px;
+}
+main .about_us .backdrop_bg .content .aboutus_content{
+  padding-top: 0;
+}
+main .about_us .backdrop_bg .content .aboutus_content p{
+  width: 100%;
+}
+main .about_us .backdrop_bg .content .slide_aboutus .chef{
+  padding-right: 0;
+}
+main .about_us .backdrop_bg .content .slide_aboutus img,
+main .about_us .backdrop_bg .content .slide_aboutus .info{
+  width: 95%;
+}
+main .about_us .backdrop_bg .content .aboutus_content{
+  padding: 0 8px;
+}
 }
