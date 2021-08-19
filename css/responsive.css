@@ -476,6 +476,93 @@ main .about_us .backdrop_bg .content .slide_aboutus .info{
   width: 95%;
 }
 main .about_us .backdrop_bg .content .aboutus_content{
-  padding: 0 8px;
+  padding: 0 6px;
 }
+}
+@media (max-width: 541px){
+  .banner-title p:first-child{
+    font-size: 30px;
+  }
+  .banner-title p:nth-child(2){
+    font-size: 35px;
+    line-height: 1.2;
+    padding: 10px 0;
+  }
+  .banner-title p:nth-child(3){
+    font-size: 16px;
+  }
+  .banner-button{
+    padding-top: 10px;
+  }
+  .banner-button a{
+    font-size: 3.5vw;
+    padding: 10px 15px;
+  }
+  .nav-item{
+    padding: 0 ;
+  }
+  .nav-item a{
+    font-size: 16px;
+    padding: 0 25px 5px;
+  }
+  .img-product-des{
+    top: 25%;
+  }
+  .button-add{
+    padding: 15px 30px;
+  }
+  .text-title,
+  .img-product-des a:nth-child(3){
+    font-size: 18px;
+  }
+  .service-item:nth-child(2){
+    padding: 5% 5px 0;
+  }
+  .service-item:nth-child(3){
+    padding: 2% 5px 0;
+  }
+  .service-item:nth-child(3) .item-text{
+    padding-top: 5px;
+  }
+  .img-service-des{
+    height: 100%;
+  }
+  .ser-des-text{
+    bottom: 0;
+    top: 50%;
+    transform:translateY(-50%);
+    padding: 0 20px ;
+  }
+  .ser-des-text h3{
+    font-size: 5.5vw;
+  }
+  .ser-des-text p, .ser-des-text a{
+    font-size: 3.5vw;
+  }
+  main .about_us .backdrop_bg .content .slide_aboutus img, main .about_us .backdrop_bg .content .slide_aboutus .info{
+    display: block!important;
+  }
+  main .about_us .backdrop_bg .content .slide_aboutus .chef-info{
+    padding: 0 0 10px;
+    margin-right: 0;
+  }
+  main .about_us .backdrop_bg .content .slide_aboutus .info h4{
+    font-size: 18px;
+  }
+  .background-drop-footer{
+    padding: 0;
+  }
+  .footer-nav-col{
+    padding-bottom: 15px;
+  }
+  .restaurant-footer .copyright{
+    padding: 10px 0 40px;
+    text-align: center;
+  }
+  .nav-item a{
+    padding: 0 15px 5px;
+  }
+  .button-add{
+    font-size: 50px;
+  }
 }

@@ -454,7 +454,7 @@ body{
     background-repeat: no-repeat;
     background-position: left -150px bottom -115px;
     background-color:#f0f0f0;
-    padding: 70px;
+    padding: 70px 0;
 }
 .contain-contact{
     position: relative;
