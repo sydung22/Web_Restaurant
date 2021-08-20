@@ -136,7 +136,7 @@ header{
     background: url(../img/homepage/rice-banner.png) no-repeat top -270px right -160px, url(../img/homepage/rice2-banner.png) no-repeat right -130px bottom;
     overflow: hidden;
     position: relative;
-    padding: 100px 0;
+    padding: 17% 0;
     background-color: #f0f0f0;
 }
 .contain-fluid-story{
@@ -144,9 +144,14 @@ header{
     margin: 0;
     align-items: center;
     display: flex;
+    position: relative;
 }
 .story-img{
     width: 50%;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
 }
 .story-img img{
     width: 100%;

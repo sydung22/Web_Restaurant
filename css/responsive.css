@@ -75,6 +75,9 @@
     padding-top: 220px;
   }
   /* Story */
+  .restaurant-story{
+    padding: 10% 0;
+  }
   .story-content{
     padding-left: 50px;
   }
@@ -177,6 +180,9 @@
     font-size:20px;
 }
 /* Story */
+.restaurant-story{
+  padding: 6% 0;
+}
   .story-content{
     padding-left: 40px;
   }
@@ -392,6 +398,13 @@
   bottom: 10px;
 }
 /* Story */
+.contain-fluid-story{
+  position: unset;
+}
+.story-img{
+  position: unset;
+  transform:unset;
+}
 .restaurant-story{
   padding: 40px 0;
   background: url(../img/homepage/rice-banner.png) no-repeat top -100px right -250px, url(../img/homepage/rice2-banner.png) no-repeat right -290px bottom;
@@ -410,6 +423,7 @@
 .story-content p{
   padding:0;
   width: 100%;
+  margin-bottom: 20px;
 }
 .story-content a{
   font-size: 18px;
@@ -557,7 +571,7 @@ main .about_us .backdrop_bg .content .aboutus_content{
   .nav-header ul li {
     /* padding: 25px 0; */
     height: 76px;
-    border-bottom: 2px solid #c3a281;
+    border-bottom: 1px solid #c3a281;
   }
   .nav-header ul li a{
     display: flex;
