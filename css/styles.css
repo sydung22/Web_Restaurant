@@ -85,7 +85,6 @@ header{
 .number-banner-slider{
     color: #fff;
     font-size:22px;
-    position: absolute;
     bottom: 80px;
     left: 50%;
     transform: translateX(-50%);
@@ -205,7 +204,7 @@ header{
 }
 .background-drop-product{
     backdrop-filter: contrast(1.2) brightness(0.2) sepia(0.3) saturate(1.5) hue-rotate(-20deg); 
-    padding: 60px 0 0 0;
+    padding: 60px 0;
 }
 .list-img-product{
     display: flex;
@@ -261,6 +260,14 @@ header{
     text-decoration: none;
     margin: 0 0 30px 0;
     font-weight: 100;
+}
+.number-product-slider,
+.number-product2-slider,.number-product3-slider{
+    color: #fff;
+    font-size:22px;
+    bottom: -45px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 .text-title{
     color: #fff;
@@ -641,7 +648,7 @@ header{
 #carouselProduct .carousel-indicators,
 #carouselProduct2 .carousel-indicators,
 #carouselProduct3 .carousel-indicators{
-    bottom: -55px;
+    bottom: -115px;
 }
 #carouselProduct .carousel-indicators [data-bs-target],
 #carouselProduct2 .carousel-indicators [data-bs-target],
