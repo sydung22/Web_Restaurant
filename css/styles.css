@@ -335,6 +335,7 @@ header{
 }
 .img-service-content img{
     position: relative;
+    object-fit: cover;
 }
 
 .service-item{
@@ -416,7 +417,7 @@ header{
     padding-bottom: 10px;
 }
 .ser-des-text h3{
-    font-size: 2vw;
+    font-size: 1.7vw;
     text-transform: uppercase;
     line-height: 10px;
 }
