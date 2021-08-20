@@ -363,6 +363,13 @@
   .row-service{
     flex-direction: row-reverse;
   }
+  main .about_us .backdrop_bg .content{
+    position: unset;
+  }
+  .video-youtube{
+    position: unset;
+    width: auto;
+  }
 }
 @media (max-width: 767px){
   .container{
@@ -572,7 +579,7 @@ main .about_us .backdrop_bg .content .slide_aboutus .info{
   width: 95%;
 }
 main .about_us .backdrop_bg .content .aboutus_content{
-  padding: 0 6px;
+  padding: 0 6px 10px;
 }
 /* Nav Bar */
 .nav-header ul{

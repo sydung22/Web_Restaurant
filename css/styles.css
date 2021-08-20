@@ -691,6 +691,7 @@ main .about_us {
     -webkit-backdrop-filter: contrast(1.2) brightness(0.4) sepia(0.3) saturate(1.5) hue-rotate(-20deg);
             backdrop-filter: contrast(1.2) brightness(0.4) sepia(0.3) saturate(1.5) hue-rotate(-20deg);
     padding-top: 50px;
+    position: relative;
   }
   main .about_us .backdrop_bg .content .slide_aboutus {
     padding-bottom: 20px;
@@ -799,6 +800,11 @@ main .about_us {
   main .about_us .backdrop_bg .content .slide_aboutus .chef-info{
       margin-right: 10px;
       padding: 15px 0;
+  }
+  .video-youtube{
+      position: absolute;
+      right: 0;
+      width: 51%;
   }
   .video-youtube iframe{
     width: 100%;
