@@ -115,7 +115,10 @@
   }
   .ser-des-text{
     padding: 0 30px;
-    bottom:5%;
+    bottom:8%;
+  }
+  .img-service-content{
+    height: 465px;
   }
   /* About us */
   main .about_us .backdrop_bg .content .aboutus_content p{
@@ -266,7 +269,7 @@
     padding: 20px 40px;
   }
   .ser-des-text{
-    bottom: 12%;
+    bottom: 11%;
     padding: 0 50px;
   }
 
@@ -350,6 +353,16 @@
   .carousel-control-next, .carousel-control-prev{
     display: none;
   }
+  .img-service-content{
+    position: relative;
+    height: auto;
+  }
+  .img-service-content img{
+    position: unset;
+  }
+  .row-service{
+    flex-direction: row-reverse;
+  }
 }
 @media (max-width: 767px){
   .container{
@@ -369,6 +382,9 @@
   }
   .logo-header a{
     display: block;
+  }
+  .ser-des-text{
+    bottom: 8%;
   }
   /* Slider */
   .banner-title p:first-child{
@@ -451,7 +467,7 @@
   padding: 0 20px;
 }
 .background-drop-product{
-  padding: 40px 0 0 0;
+  padding: 40px 0 55px;
 }
 .list-img-product{
   justify-content: space-between;
@@ -467,6 +483,9 @@
 }
 .number-slider{
   padding: 10px 0 20px;
+}
+#carouselProduct .carousel-indicators, #carouselProduct2 .carousel-indicators, #carouselProduct3 .carousel-indicators{
+  bottom: -105px;
 }
 /* Service */
 .restaurant-service{

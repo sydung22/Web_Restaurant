@@ -328,6 +328,15 @@ header{
     justify-content: space-between;
     padding:0 15px 0 0;
 }
+.img-service-content{
+    position: absolute;
+    right: 0;
+    height: 570px;
+}
+.img-service-content img{
+    position: relative;
+}
+
 .service-item{
     width: calc((100% - 10px) / 2);
 }
@@ -392,7 +401,7 @@ header{
 }
 .ser-des-text{
     color: #fff;
-    bottom: 8%;
+    bottom: 11%;
     text-align: center;
     padding: 0 50px;
 }
@@ -414,10 +423,10 @@ header{
 .ser-des-text h3 hr{
     width:70%;
     text-align:center;
-    margin-left:80px;
     height: 2px;
     opacity: 1;
     color: #c3a281;
+    margin: 15px 0 10px 80px;
 }
 /* About */
 /* .contain-fluid-about{
