@@ -575,14 +575,16 @@ body{
     font-size: 15px;
     font-weight: 100;
 }
-.footer-nav-col li a,.restaurant-footer .content .social a{
+.footer-nav-col ul li a,.restaurant-footer .content .social a{
     text-decoration:none;
     color:#fff;
     transition: 0.5s;
 }
+.footer-nav-col p{
+    margin-bottom: 5px;
+}
 .background-drop-footer{
     backdrop-filter: contrast(1.2) brightness(0.2) sepia(0.3) saturate(1.5) hue-rotate(-20deg); 
-    padding: 20px 0;
 }
 .restaurant-footer .content .social{
     margin: 0 auto;
