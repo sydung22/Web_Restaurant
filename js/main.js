@@ -51,6 +51,12 @@ menuBtn.addEventListener('click', () => {
 
 });
 
+window.addEventListener('scroll', function(){
+  let header = document.querySelector('header');
+  let windowPosition = window.scrollY > 0;
+  header.classList.toggle('scrolling-active', windowPosition);
+})
+
 const btnScrolltoTop = document.querySelector('#btnScrolltoTop');
 btnScrolltoTop.addEventListener('click', function(){
   $('html, body').animate({scrollTop: 0}, 'slow');

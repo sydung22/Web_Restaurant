@@ -349,14 +349,17 @@
   .container{
     max-width: 100%;
   }
-  /* .nav-header{
-    display: none;
-  } */
+  .restaurant-slider{
+    margin-top: 0px!important;
+  }
+  .nav-header{
+    padding-top: 17px;
+  }
   .logo-header{
     padding-top:10px;
-    display:block;
+    display:table;
     text-align:center;
-
+    margin: auto;
   }
   .logo-header a{
     display: block;
@@ -544,7 +547,7 @@ main .about_us .backdrop_bg .content .aboutus_content{
     width: 100%;
     min-height: 100vh;
     background: #000;
-    top: 0;
+    top: 74px;
     left: -110%;
     text-align: center;
     display: block;
@@ -552,8 +555,16 @@ main .about_us .backdrop_bg .content .aboutus_content{
     display: block!important;
   }
   .nav-header ul li {
-    padding: 25px 0;
+    /* padding: 25px 0; */
+    height: 76px;
     border-bottom: 2px solid #c3a281;
+  }
+  .nav-header ul li a{
+    display: flex;
+    justify-content:center;
+    width: 100%;
+    height:100%;
+    align-items: center;
   }
   .nav-header ul li:nth-child(4){
     display: none;
@@ -563,6 +574,22 @@ main .about_us .backdrop_bg .content .aboutus_content{
   }
   .nav-header ul.show{
     left: 0;
+  }
+}
+@media(max-width:575px){
+  .footer-nav-col:not(:last-child) ul{
+    display: flex;
+    /* list-style: outside; */
+    justify-content: space-between;
+  }
+  .footer-nav-col p{
+    color: #c3a281
+  }
+  .restaurant-footer .copyright{
+    padding: 20px 0 30px;
+  }
+  .restaurant-footer .content{
+    padding: 30px 20px 20px;
   }
 }
 @media (max-width: 541px){
@@ -646,9 +673,6 @@ main .about_us .backdrop_bg .content .aboutus_content{
   }
   .footer-nav-col{
     padding-bottom: 5px;
-  }
-  .restaurant-footer .copyright{
-    padding: 10px 0 40px;
   }
   .nav-item a{
     padding: 0 15px 5px;
