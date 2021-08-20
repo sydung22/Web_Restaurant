@@ -591,6 +591,9 @@ main .about_us .backdrop_bg .content .aboutus_content{
   .restaurant-footer .content{
     padding: 30px 20px 20px;
   }
+  .restaurant-footer .content .social{
+    padding-top: 8px;
+  }
 }
 @media (max-width: 541px){
   .banner-title p:first-child{

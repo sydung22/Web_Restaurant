@@ -598,7 +598,7 @@ header{
 }
 .footer-nav-col p{
     margin-bottom: 5px;
-    font-size: 18px;
+    font-size: 17px;
 }
 .background-drop-footer{
     backdrop-filter: contrast(1.2) brightness(0.2) sepia(0.3) saturate(1.5) hue-rotate(-20deg); 
