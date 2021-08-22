@@ -892,6 +892,8 @@ main .about_us {
 .contain-fluid-story-desc{
     background-color: #f0f0f0;
     padding: 60px 0;
+    z-index: 1;
+    overflow: hidden;
 }
 .story-desc-text .text-title{
     color: #c3a281;
@@ -913,6 +915,18 @@ main .about_us {
 }
 .img-col .img-item img{
     width: 100%;
+}
+.rice_banner-story .img1{
+    position: absolute;
+    z-index: -100;
+    left: -100px;
+    top: 50px;
+}
+.rice_banner-story .img2{
+    position: absolute;
+    z-index: -100;
+    right: -150px;
+    bottom: 50px;
 }
 /* Story Percent */
 .story-desc-percent{
@@ -955,6 +969,8 @@ main .wrap_chart {
 .product-desc-menu{
     background-color: #f0f0f0;
     padding: 60px 0;
+    z-index: 1;
+    overflow: hidden;
 }
 .desc-title p:first-child{
     font-size: 24px;
@@ -1040,4 +1056,16 @@ main .wrap_chart {
 }
 .searchbar .form-control:focus{
     box-shadow: unset;
+}
+.rice_banner-menu .img1{
+    position: absolute;
+    z-index: -100;
+    left: -120px;
+    bottom: 50px;
+}
+.rice_banner-menu .img2{
+    position: absolute;
+    z-index: -100;
+    right: -120px;
+    top: 50px;
 }
