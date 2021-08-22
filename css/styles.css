@@ -1012,6 +1012,7 @@ main .wrap_chart {
 }
 .desc-input .searchbar{
     width: 60%;
+    flex-wrap: nowrap;
 }
 .desc-input .searchbar input{
     width: 90%;

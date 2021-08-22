@@ -71,6 +71,12 @@
   .number-banner-slider{
     bottom: 70px;
   }
+  .desc-input .searchbar{
+    width: 100%;
+  }
+  .item-img-col .item-text p:first-child{
+    width: 80%;
+  }
 }
 @media (min-width: 1200px) and (max-width: 1400px){
   .story-content{
@@ -231,7 +237,7 @@
   .service-item:nth-child(3){
     padding: 10px 10px 0;
   }
-  .item-text{
+  .service-item .item-text{
     padding:10px 0 0 0;
   }
   .service-item:nth-child(2) .image-service-second{
@@ -240,11 +246,11 @@
   .service-item:nth-child(3) .image-service-second{
     width: 50px;
   }
-  .item-text p:first-child{
+  .service-item .item-text p:first-child{
     font-size: 17px;
     font-weight: bold;
   }
-  .item-text p:nth-child(2){
+  .service-item .item-text p:nth-child(2){
     font-size:14px;
   }
   .ser-des-text p{
@@ -261,11 +267,11 @@
   .service-item:nth-child(3) .image-service-second{
     width: auto;
   }
-  .item-text p:first-child,
+  .service-item .item-text p:first-child,
   .ser-des-text h3{
     font-size: 25px;
   }
-  .item-text p:nth-child(2),
+  .service-item.item-text p:nth-child(2),
   .ser-des-text p{
     font-size: 18px;
   }
@@ -384,17 +390,32 @@
     position: unset;
     width: auto;
   }
-  .rice_banner-story .img1{
-    position: absolute;
-    z-index: -100;
-    left: -190px;
-    top: 50px;
+  .rice_banner-story .img1,
+  .rice_banner-menu .img1{
+    left: -200px;
 }
-.rice_banner-story .img2{
-    position: absolute;
-    z-index: -100;
-    right: -190px;
-    bottom: 50px;
+.rice_banner-story .img2,
+.rice_banner-menu .img2{
+    right: -240px;
+}
+.desc-input{
+  display: block!important;
+}
+.desc-input .arrow{
+  padding: 10px 0 0!important;
+}
+.desc-input .arrow a{
+  padding: 7px 15px;
+}
+.item-img-col .item-text p:first-child{
+  font-size: 18px;
+  width: 100%;
+}
+.item-img-col .item-text p:last-child{
+  font-size: 15px;
+}
+.item-img-col .item-text{
+  padding: 15px 10px 0;
 }
 }
 @media (max-width: 767px){
@@ -641,6 +662,21 @@ main .about_us .backdrop_bg .content .aboutus_content{
   .nav-header ul.show{
     left: 0;
   }
+  .product-desc-menu{
+    padding: 0 0 40px;
+  }
+  .contain-menu .row{
+    padding: 0 10px;
+  }
+  .contain-menu .row  .col-12:first-child{
+    height: 400px;
+  }
+  .contain-menu .desc-title{
+    padding: 20px 0 0;
+  }
+  .desc-input{
+    padding: 0 0 25px;
+  }
 }
 @media(max-width:575px){
   .footer-nav-col:not(:last-child) ul{
@@ -764,17 +800,17 @@ main .about_us .backdrop_bg .content .aboutus_content{
   .ser-des-text{
     top: 45%;
   }
-  .item-text p:nth-child(2),
-  .item-text p:nth-child(3){
+  .service-item .item-text p:nth-child(2),
+  .service-item .item-text p:nth-child(3){
     margin-bottom: 5px;
   }
 }
 @media (max-width: 320px){
-  .item-text p:nth-child(2),
-  .item-text p:nth-child(3){
+  .service-item .item-text p:nth-child(2),
+  .service-item .item-text p:nth-child(3){
     display: none;
   }
-  .item-text p:first-child{
+  .service-item .item-text p:first-child{
     margin-bottom: 10px;
   }
   .service-item:nth-child(3){
