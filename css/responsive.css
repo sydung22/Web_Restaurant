@@ -30,7 +30,7 @@
     background-color: #000;
     color: #fff;
   }
-  .service-item:last-child a:hover{
+  .bt-add-img:hover{
     opacity: 1;
     color: #c3a281
   }
@@ -44,6 +44,17 @@
   }
   .restaurant-footer .content .social a:hover{
     opacity: 0.7;
+  }
+  .desc-img-text .item-img-col:hover{
+    box-shadow: 0px 0px 30px rgb(103 92 92 / 25%);
+  }
+  .desc-img-text .item-img-col:hover .img-product img{
+    transform: scale(1.2);
+  }
+  .searchbar .input-group-text:hover,
+  .desc-input .arrow a:hover{
+    background-color: #000;
+    color: #fff;
   }
 }
 @media (max-width:1199px){
@@ -159,6 +170,9 @@
   }
   main .about_us .backdrop_bg .content .chef .chef-info{
     padding: 0;
+  }
+  .restaurant-footer .content .row{
+    margin: auto;
   }
 }
 @media (min-width: 768px) and (max-width: 991px){
