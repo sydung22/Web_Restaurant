@@ -384,6 +384,18 @@
     position: unset;
     width: auto;
   }
+  .rice_banner-story .img1{
+    position: absolute;
+    z-index: -100;
+    left: -190px;
+    top: 50px;
+}
+.rice_banner-story .img2{
+    position: absolute;
+    z-index: -100;
+    right: -190px;
+    bottom: 50px;
+}
 }
 @media (max-width: 767px){
   .container{
