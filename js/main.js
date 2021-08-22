@@ -53,8 +53,10 @@ menuBtn.addEventListener('click', () => {
 
 window.addEventListener('scroll', function(){
   let header = document.querySelector('header');
-  let windowPosition = window.scrollY > 0;
+  let pageTop = document.querySelector('#btnScrolltoTop');
+  let windowPosition = window.scrollY > 80;
   header.classList.toggle('scrolling-active', windowPosition);
+  pageTop.classList.toggle('active', windowPosition);
 })
 
 const btnScrolltoTop = document.querySelector('#btnScrolltoTop');
