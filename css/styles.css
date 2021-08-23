@@ -298,6 +298,11 @@ header{
 .restaurant-service{
     overflow: hidden;
     padding: 100px 0;
+    background: #f0f0f0;
+    z-index: 1;
+}
+.restaurant-service .container-fluid{
+    z-index: 1;
 }
 .title h2{
     color: #c3a281;
@@ -894,6 +899,9 @@ main .about_us {
     padding: 60px 0;
     z-index: 1;
     overflow: hidden;
+}
+.contain-story-desc:last-child{
+    padding: 60px 0 0;
 }
 .story-desc-text .text-title{
     color: #c3a281;

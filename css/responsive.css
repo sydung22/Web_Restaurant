@@ -666,6 +666,12 @@ main .about_us .backdrop_bg .content .aboutus_content{
   .nav-header ul.show{
     left: 0;
   }
+  .contain-story-desc:last-child{
+    padding: 35px 0 0;
+  }
+  .contain-fluid-story-desc{
+    padding: 50px 0 30px;
+  }
   .product-desc-menu{
     padding: 20px 0 40px;
   }
