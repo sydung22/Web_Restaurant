@@ -1075,11 +1075,11 @@ main .wrap_chart {
     position: absolute;
     z-index: -100;
     left: -120px;
-    bottom: 50px;
+    bottom: 180px;
 }
 .rice_banner-menu .img2{
     position: absolute;
     z-index: -100;
     right: -120px;
-    top: 50px;
+    top: 0;
 }
