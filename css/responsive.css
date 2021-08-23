@@ -120,11 +120,11 @@
   .service-item:nth-child(3) .image-service-second{
     width: 50px;
   }
-  .item-text p:first-child{
+  .service-item .item-text p:first-child{
     font-size: 17px;
     font-weight: bold;
   }
-  .item-text p:nth-child(2){
+  .service-item .item-text p:nth-child(2){
     font-size:14px;
   }
   .ser-des-text p{
@@ -180,6 +180,10 @@
   .restaurant-footer .content .row{
     margin: auto;
   }
+  /* .contain-menu .row .col-image-left,
+  .contain-menu .row .col-image-right{
+    height: 570px;
+  } */
 }
 @media (min-width: 768px) and (max-width: 991px){
   /* Slider */
@@ -663,7 +667,7 @@ main .about_us .backdrop_bg .content .aboutus_content{
     left: 0;
   }
   .product-desc-menu{
-    padding: 0 0 40px;
+    padding: 20px 0 40px;
   }
   .contain-menu .row{
     padding: 0 10px;
@@ -683,6 +687,15 @@ main .about_us .backdrop_bg .content .aboutus_content{
   .item-img-col .item-text p:last-child{
     font-size: 16px;
   }
+  .contain-menu .row .col-image-left,
+  .contain-menu .row .col-image-right{
+    position: unset;
+  }
+  .contain-fluid-menu:last-child .contain-menu .row{
+    flex-direction: row-reverse;
+    padding-top: 60px;
+  }
+  
 }
 @media(max-width:575px){
   .footer-nav-col:not(:last-child) ul{

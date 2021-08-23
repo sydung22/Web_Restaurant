@@ -978,6 +978,19 @@ main .wrap_chart {
     color: #c3a281;
     line-height: 1.2;
 }
+.contain-menu .row .col-image-left{
+    position: absolute;
+    left: 0;
+    height: 650px;
+}
+.contain-menu .row .col-image-right{
+    position: absolute;
+    right: 0;
+    height: 650px;
+}
+.contain-fluid-menu:last-child .contain-menu .row{
+    padding-top: 100px
+}
 .desc-img-text .item-img-col{
     width: calc((100% - 10px)/2);
     transition: 0.5s;
