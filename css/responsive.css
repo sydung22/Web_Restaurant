@@ -693,7 +693,7 @@ main .about_us .backdrop_bg .content .aboutus_content{
     padding: 50px 0 30px;
   }
   .product-desc-menu{
-    padding: 20px 0 40px;
+    padding: 0 0 40px;
   }
   .contain-menu .row{
     padding: 0 10px;
@@ -719,10 +719,11 @@ main .about_us .backdrop_bg .content .aboutus_content{
   }
   .contain-fluid-menu:last-child .contain-menu .row{
     flex-direction: row-reverse;
-    padding-top: 60px;
+    padding-top: 40px;
   }
     /* Service Des */
-    .contain-service-desc .service-desc-content{
+    .contain-service-desc .service-desc-content,
+    .contain-fluid-service-desc:last-child .service-desc-content{
       padding: 25px 0 0;
     }
     .contain-fluid-service-desc .contain-service-desc .service-icon-desc img{
@@ -748,6 +749,9 @@ main .about_us .backdrop_bg .content .aboutus_content{
     }
     .contain-fluid-service-desc:last-child .contain-service-desc{
       padding-top: 30px;
+    }
+    .service-desc-content .content-text p:last-child{
+      margin-bottom: 12px;
     }
   
 }
