@@ -184,6 +184,16 @@
   .contain-menu .row .col-image-right{
     height: 570px;
   } */
+  .contain-service-desc .service-desc-content,
+  .contain-fluid-service-desc:last-child .service-desc-content{
+    padding: 10px 0 0;
+  }
+  .service-desc-content .content-title h2 hr{
+    width: 100px;
+  }
+  .service-desc-content .content-text{
+    padding-top: 10px;
+  }
 }
 @media (min-width: 768px) and (max-width: 991px){
   /* Slider */
@@ -421,6 +431,16 @@
 .item-img-col .item-text{
   padding: 15px 10px 0;
 }
+  /* Ser Des */
+  .service-desc-content .content-text{
+    padding: 0;
+  }
+  .contain-fluid-service-desc:last-child .contain-service-desc{
+    padding-top: 40px;
+  }
+  .restaurant-service-desc{
+    padding: 10px 0 40px;
+  }
 }
 @media (max-width: 767px){
   .container{
@@ -701,6 +721,34 @@ main .about_us .backdrop_bg .content .aboutus_content{
     flex-direction: row-reverse;
     padding-top: 60px;
   }
+    /* Service Des */
+    .contain-service-desc .service-desc-content{
+      padding: 25px 0 0;
+    }
+    .contain-fluid-service-desc .contain-service-desc .service-icon-desc img{
+      width: 26vw;
+    }
+    .contain-fluid-service-desc:last-child .contain-service-desc .service-icon-desc img{
+      width: 20vw;
+    }
+    .contain-fluid-service-desc:last-child .contain-service-desc .service-icon-desc{
+      padding: 16% 10%;
+    }
+    .service-icon-desc p:nth-child(2){
+      padding-top: 5px;
+    }
+    .service-desc-content .content-title h2{
+      display: block;
+      font-size: 22px
+    }
+    .service-desc-content .content-title h2 hr{
+      width: 250px;
+      margin-top: 7px;
+      margin-bottom: 20px;
+    }
+    .contain-fluid-service-desc:last-child .contain-service-desc{
+      padding-top: 30px;
+    }
   
 }
 @media(max-width:575px){
