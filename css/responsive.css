@@ -82,6 +82,12 @@
   .story-content{
     padding-left: 60px;
   }
+  .service-desc-img{
+    width: 64%;
+  }
+  .contain-service-desc{
+    padding: 0 0 10%;
+  }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
   .restaurant-slider,.contain-fluid-slider{
@@ -193,6 +199,12 @@
   }
   .service-desc-content .content-text{
     padding-top: 10px;
+  }
+  .service-desc-img{
+    width: 64%;
+  }
+  .contain-service-desc{
+    padding: 0 0 7%;
   }
 }
 @media (min-width: 768px) and (max-width: 991px){
@@ -440,6 +452,16 @@
   }
   .restaurant-service-desc{
     padding: 10px 0 40px;
+  }
+  .contain-fluid-service-desc:last-child .contain-service-desc{
+    flex-direction: row-reverse;
+  }
+  .service-desc-img{
+    position: unset;
+    width: auto;
+  }
+  .contain-service-desc{
+    padding: 0;
   }
 }
 @media (max-width: 767px){
