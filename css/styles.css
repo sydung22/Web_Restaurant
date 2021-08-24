@@ -1172,8 +1172,7 @@ main .progress_circle {
     padding: 25% 10%;
     text-align: center;
     color: #c3a281;
-    background-color: #000;
-    opacity: 0.8;
+    background-color: rgba(0,0,0,.6);
     z-index: 1;
 }
 .service-icon-desc img{
@@ -1193,7 +1192,7 @@ main .progress_circle {
     left: 0;
     right:unset;
     padding: 20% 10%;
-    background-color: #c3a281;
+    background-color: rgba(195,162,129,.6);
 }
 .contain-fluid-service-desc:last-child .service-icon-desc p:nth-child(2){
     color: #000;
