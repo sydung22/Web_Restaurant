@@ -1185,3 +1185,36 @@ main .wrap_chart {
 .contain-fluid-service-desc:last-child .service-icon-desc p:nth-child(2){
     color: #000;
 }
+/* About us Des */
+/* main .evalute {
+    background-image: url("../img/our_story/bg-shop.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+  main .evalute .bg_drop {
+    padding: 60px 15%;
+    -webkit-backdrop-filter: contrast(1.2) brightness(0.2) sepia(0.3) saturate(1.5) hue-rotate(-20deg);
+            backdrop-filter: contrast(1.2) brightness(0.2) sepia(0.3) saturate(1.5) hue-rotate(-20deg);
+  }
+  main .evalute .bg_drop .wrap_chart {
+    color: #c3a281;
+  }
+  main .evalute .bg_drop .wrap_chart .title {
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 0;
+    margin-top: 10px;
+  }
+  main .evalute .bg_drop .wrap_chart .chart {
+    margin: 0 70px;
+    position: relative;
+  }
+  main .evalute .bg_drop .wrap_chart .chart span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 40PX;
+  } */

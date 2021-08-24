@@ -1,17 +1,5 @@
 $( document ).ready(function() {
 
-$('.slider').slick({
-  infinite: true,
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  autoplay: false,
-   dots: true,
-   arrows: true,
-   autoplaySpeed: 3500,
-   speed: 1500,
-   fade: true,
-   cssEase: 'linear'
-});
 $('.slide_aboutus').slick({
   dots: true,
   infinite: true,
