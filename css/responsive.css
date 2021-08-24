@@ -775,6 +775,13 @@ main .about_us .backdrop_bg .content .aboutus_content{
     .service-desc-content .content-text p:last-child{
       margin-bottom: 12px;
     }
+    .restaurant-service-desc .rice_banner-menu .img1{
+      left: -220px ;
+      bottom: 220px;
+  }
+  .restaurant-service-desc .rice_banner-menu .img2{
+      right: -250px;
+  }
     /* Percent */
     .story-desc-percent .background-drop-product{
       padding: 40px 0;

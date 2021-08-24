@@ -1099,6 +1099,15 @@ main .progress_circle {
 .restaurant-service-desc{
     background-color: #f0f0f0;
     padding: 30px 0 50px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+.restaurant-service-desc .rice_banner-menu .img1{
+    left: -180px ;
+}
+.restaurant-service-desc .rice_banner-menu .img2{
+    right: -180px;
 }
 .service-desc-img img{
     width: 100%;
@@ -1107,7 +1116,7 @@ main .progress_circle {
     position: absolute;
     width: 60%;
 }
-.contain-fluid-service-desc:first-child .service-desc-img{
+.contain-fluid-service-desc:nth-child(2) .service-desc-img{
     left: 0;
 }
 .contain-fluid-service-desc:last-child .service-desc-img{
