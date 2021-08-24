@@ -72,17 +72,17 @@ $( document ).ready(function() {
 
     });
 
-    // $(function() {
-    //     $('.chart').easyPieChart({
-    //         barColor: '#c3a281',
-    //         trackColor: '',
-    //         scaleColor: '',
-    //         lineCap: 'round',
-    //         lineWidth: 3,
-    //         size: 145,
-    //         animate: 1000,
-    //         onStart: $.noop,
-    //         onStop: $.noop
-    //     });
-    // });
+    $(function() {
+        $('.chart').easyPieChart({
+            barColor: '#c3a281',
+            trackColor: '',
+            scaleColor: '',
+            lineCap: 'round',
+            lineWidth: 3,
+            size: 125,
+            animate: 3000,
+            onStart: $.noop,
+            onStop: $.noop
+        });
+    });
     

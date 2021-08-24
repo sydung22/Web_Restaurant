@@ -775,6 +775,10 @@ main .about_us .backdrop_bg .content .aboutus_content{
     .service-desc-content .content-text p:last-child{
       margin-bottom: 12px;
     }
+    /* Percent */
+    .story-desc-percent .background-drop-product{
+      padding: 40px 0;
+    }
   
 }
 @media(max-width:575px){

@@ -48,4 +48,18 @@ $( document ).ready(function() {
     $('.number-banner-slider .num-total').text($indexTotal);
     
 });
+
+$(function() {
+  $('.chart').easyPieChart({
+      barColor: '#c3a281',
+      trackColor: '',
+      scaleColor: '',
+      lineCap: 'round',
+      lineWidth: 3,
+      size: 125,
+      animate: 3000,
+      onStart: $.noop,
+      onStop: $.noop
+  });
+});
     
