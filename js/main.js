@@ -70,60 +70,25 @@ if($indexTotal <= 9){
 }
 $('.number-banner-slider .num-total').text($indexTotal);
 
-// Slider Product 1
 
-var productCarousel = document.getElementById('carouselProduct')
+// Slider Product
+$('.nav-item').each(function (index) {
+    var productCarousel = document.getElementById(`carouselProduct${index + 1}`)
 
-productCarousel.addEventListener('slid.bs.carousel', function () {
-    $indexPro = $('#carouselProduct .carousel-item.active').index() + 1;
-    if($indexPro <= 9){
-      $indexPro = '0' + $indexPro;
+    productCarousel.addEventListener('slid.bs.carousel', function () {
+      $indexPro = $(`#carouselProduct${index + 1} .carousel-item.active`).index() + 1
+      console.log($indexPro)
+      if ($indexPro <= 9) {
+        $indexPro = '0' + $indexPro
+      }
+      $(`.number-product${index + 1}-slider .num-active`).text($indexPro)
+    })
+
+    $indexProTotal = $(`#carouselProduct${index + 1} .carousel-item`).length
+    if ($indexProTotal <= 9) {
+      $indexProTotal = '0' + $indexProTotal
     }
-    $('.number-product-slider .num-active').text($indexPro);
-})
-
-$indexProTotal = $('#carouselProduct .carousel-item').length;
-if($indexProTotal <= 9){
-  $indexProTotal = '0' + $indexProTotal;
-}
-$('.number-product-slider .num-total').text($indexProTotal);
-
-// Slider Product 2
-
-var productCarousel = document.getElementById('carouselProduct2')
-
-productCarousel.addEventListener('slid.bs.carousel', function () {
-    $indexPro = $('#carouselProduct2 .carousel-item.active').index() + 1;
-    if($indexPro <= 9){
-      $indexPro = '0' + $indexPro;
-    }
-    $('.number-product2-slider .num-active').text($indexPro);
-})
-
-$indexProTotal = $('#carouselProduct2 .carousel-item').length;
-if($indexProTotal <= 9){
-  $indexProTotal = '0' + $indexProTotal;
-}
-$('.number-product2-slider .num-total').text($indexProTotal);
-
-// Slider Product 3
-
-var productCarousel = document.getElementById('carouselProduct3')
-
-productCarousel.addEventListener('slid.bs.carousel', function () {
-    $indexPro = $('#carouselProduct3 .carousel-item.active').index() + 1;
-    if($indexPro <= 9){
-      $indexPro = '0' + $indexPro;
-    }
-    $('.number-product3-slider .num-active').text($indexPro);
-})
-
-$indexProTotal = $('#carouselProduct3 .carousel-item').length;
-if($indexProTotal <= 9){
-  $indexProTotal = '0' + $indexProTotal;
-}
-$('.number-product3-slider .num-total').text($indexProTotal);
-
-
+    $(`.number-product${index + 1}-slider .num-total`).text($indexProTotal)
+  })
 
 });

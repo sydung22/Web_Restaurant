@@ -584,7 +584,7 @@
 .number-slider{
   padding: 10px 0 20px;
 }
-#carouselProduct .carousel-indicators, #carouselProduct2 .carousel-indicators, #carouselProduct3 .carousel-indicators{
+#carouselProduct1 .carousel-indicators, #carouselProduct2 .carousel-indicators, #carouselProduct3 .carousel-indicators{
   bottom: -105px;
 }
 /* Service */

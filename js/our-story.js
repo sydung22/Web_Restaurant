@@ -49,17 +49,28 @@ $( document ).ready(function() {
     
 });
 
-$(function() {
-  $('.chart').easyPieChart({
-      barColor: '#c3a281',
-      trackColor: '',
-      scaleColor: '',
-      lineCap: 'round',
-      lineWidth: 3,
-      size: 125,
-      animate: 3000,
-      onStart: $.noop,
-      onStop: $.noop
-  });
+$(window).scroll(function() {
+  var hT = $('.story-desc-percent').offset().top,
+      hH = $('.story-desc-percent').outerHeight(),
+      wH = $(window).height(),
+      wS = $(this).scrollTop();
+   console.log((hT-wH) , wS);
+  if (wS > (hT+hH-wH)){
+    $(function() {
+      $('.chart').easyPieChart({
+          barColor: '#c3a281',
+          trackColor: '',
+          scaleColor: '',
+          lineCap: 'round',
+          lineWidth: 3,
+          size: 125,
+          animate: 3000,
+          onStart: $.noop,
+          onStop: $.noop
+      });
+    });
+  }
 });
+
+
     
