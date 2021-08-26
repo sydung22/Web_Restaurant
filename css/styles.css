@@ -983,7 +983,7 @@ main .progress_circle {
 	content: attr(data-after);
 	font-size: 32px;
 }
-.percent:before
+.number-count:before
 {
 	content: attr(data-before);
 	font-size: 32px;

@@ -77,24 +77,23 @@ $( document ).ready(function() {
           hH = $('.story-desc-percent').outerHeight(),
           wH = $(window).height(),
           wS = $(this).scrollTop();
-       console.log((hT-wH) , wS);
-      if (wS >= (hT - wH)){
-        $(function() {
-          $('.chart').easyPieChart({
-              barColor: '#c3a281',
-              trackColor: '',
-              scaleColor: '',
-              lineCap: 'round',
-              lineWidth: 3,
-              size: 125,
-              animate: 3000,
-              onStart: $.noop,
-              onStop: $.noop,
-              onStep: function(from, to, percent) {
-                this.el.children[0].innerHTML = Math.round(percent);
-              }
-          });
-        });
-      }
+          if (wS >= (hT - wH)){
+            $(function() {
+              $('.chart').easyPieChart({
+                  barColor: '#c3a281',
+                  trackColor: '',
+                  scaleColor: '',
+                  lineCap: 'round',
+                  lineWidth: 3,
+                  size: 125,
+                  animate: 3000,
+                  onStart: $.noop,
+                  onStop: $.noop
+              });
+            });
+          }
     });
-    
+    $(".number-count").counterUp({
+      delay: 10,
+      time: 2000
+    });
