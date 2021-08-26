@@ -978,6 +978,16 @@ main .progress_circle {
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
   }
+  .percent:after
+{
+	content: attr(data-after);
+	font-size: 32px;
+}
+.percent:before
+{
+	content: attr(data-before);
+	font-size: 32px;
+}
 /* Product Description */
 .product-desc-menu{
     background-color: #f0f0f0;

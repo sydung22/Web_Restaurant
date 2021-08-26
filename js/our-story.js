@@ -54,8 +54,7 @@ $(window).scroll(function() {
       hH = $('.story-desc-percent').outerHeight(),
       wH = $(window).height(),
       wS = $(this).scrollTop();
-   console.log((hT-wH) , wS);
-  if (wS > (hT+hH-wH)){
+  if (wS >= (hT - wH)){
     $(function() {
       $('.chart').easyPieChart({
           barColor: '#c3a281',
@@ -66,7 +65,10 @@ $(window).scroll(function() {
           size: 125,
           animate: 3000,
           onStart: $.noop,
-          onStop: $.noop
+          onStop: $.noop,
+          onStep: function(from, to, percent) {
+            this.el.children[0].innerHTML = Math.round(percent);
+          }
       });
     });
   }
